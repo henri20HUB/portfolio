@@ -24,7 +24,6 @@
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between">
 
-    <!-- Navigation Bar -->
     <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-xl sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="index.html" class="font-bold text-lg tracking-tight hover:text-accentBlue transition-colors">Henri Withöft</a>
@@ -38,64 +37,61 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="max-w-4xl mx-auto px-6 py-16 flex-grow">
         <div class="space-y-4 mb-12">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
-                <i class="fas fa-bullseye"></i> /future
+                <i class="fas fa-compass"></i> /university-roadmap
             </div>
-            <h1 class="text-3xl font-bold tracking-tight text-white">Future Aspirations & Roadmap</h1>
-            <p class="text-slate-400 text-sm max-w-xl">Goals, university directions, and upcoming technical pursuits.</p>
+            <h1 class="text-3xl font-bold tracking-tight text-white">Target Degrees & Universities</h1>
+            <p class="text-slate-400 text-sm max-w-xl">Intended academic paths in fundamental physics and specialized engineering.</p>
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2">
-            <!-- Goal 1 -->
-            <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-3 hover:border-accentBlue/40 transition-all">
+            <!-- Degree Focus -->
+            <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-3">
                 <div class="w-10 h-10 rounded-xl bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue">
-                    <i class="fas fa-university text-base"></i>
-                </div>
-                <h2 class="font-semibold text-white text-base">Engineering Degree</h2>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Pursuing aerospace, mechanical, or computer engineering at a top university program.
-                </p>
-            </div>
-
-            <!-- Goal 2 -->
-            <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-3 hover:border-accentPurple/40 transition-all">
-                <div class="w-10 h-10 rounded-xl bg-accentPurple/10 border border-accentPurple/20 flex items-center justify-center text-accentPurple">
-                    <i class="fas fa-microchip text-base"></i>
-                </div>
-                <h2 class="font-semibold text-white text-base">Embedded Hardware Systems</h2>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Expanding microcontroller C/C++ engineering to interface directly with physical sensors and aerospace components.
-                </p>
-            </div>
-
-            <!-- Goal 3 -->
-            <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-3 hover:border-emerald-500/40 transition-all">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
-                    <i class="fas fa-users text-base"></i>
-                </div>
-                <h2 class="font-semibold text-white text-base">Research Collaborations</h2>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Joining student satellite or robotics teams to apply classroom theoretical physics into physical projects.
-                </p>
-            </div>
-
-            <!-- Goal 4 -->
-            <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-3 hover:border-amber-500/40 transition-all">
-                <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
                     <i class="fas fa-atom text-base"></i>
                 </div>
-                <h2 class="font-semibold text-white text-base">Applied Theoretical Physics</h2>
+                <h2 class="font-semibold text-white text-base">Primary Focus: Physics</h2>
                 <p class="text-sm text-slate-400 leading-relaxed">
-                    Building math modeling capabilities for dynamic physical systems and fluid dynamics simulations.
+                    Aiming for a degree in Physics to build an unshakeable foundation in mechanics, thermodynamics, electromagnetism, and mathematical modeling.
                 </p>
+            </div>
+
+            <!-- Engineering Focus -->
+            <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-3">
+                <div class="w-10 h-10 rounded-xl bg-accentPurple/10 border border-accentPurple/20 flex items-center justify-center text-accentPurple">
+                    <i class="fas fa-rocket text-base"></i>
+                </div>
+                <h2 class="font-semibold text-white text-base">Aerospace & Electrical Engineering</h2>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Secondary interest in Aerospace or Electrical Engineering to apply physics directly to flight dynamics, hardware, and propulsion.
+                </p>
+            </div>
+        </div>
+
+        <!-- Target Institutions -->
+        <div class="mt-10 p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-4">
+            <h3 class="text-lg font-semibold text-white flex items-center gap-2">
+                <i class="fas fa-university text-emerald-400"></i> Target Institutions
+            </h3>
+            <div class="grid gap-3 sm:grid-cols-3">
+                <div class="p-4 rounded-xl bg-darkBg border border-borderSubtle text-center">
+                    <span class="font-semibold text-white text-sm block">ETH Zürich</span>
+                    <span class="text-xs text-slate-500">Switzerland</span>
+                </div>
+                <div class="p-4 rounded-xl bg-darkBg border border-borderSubtle text-center">
+                    <span class="font-semibold text-white text-sm block">EPFL</span>
+                    <span class="text-xs text-slate-500">Lausanne, Switzerland</span>
+                </div>
+                <div class="p-4 rounded-xl bg-darkBg border border-borderSubtle text-center">
+                    <span class="font-semibold text-white text-sm block">TU München</span>
+                    <span class="text-xs text-slate-500">Germany</span>
+                </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="border-t border-borderSubtle py-8 text-center text-xs text-slate-500">
         <p>&copy; 2026 Henri Withöft.</p>
     </footer>

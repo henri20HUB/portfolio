@@ -24,7 +24,6 @@
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between">
 
-    <!-- Navigation Bar -->
     <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-xl sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="index.html" class="font-bold text-lg tracking-tight hover:text-accentBlue transition-colors">Henri Withöft</a>
@@ -38,58 +37,56 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="max-w-4xl mx-auto px-6 py-16 flex-grow">
         <div class="space-y-4 mb-12">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
-                <i class="fas fa-terminal"></i> /projects
+                <i class="fas fa-terminal"></i> /technical-projects
             </div>
-            <h1 class="text-3xl font-bold tracking-tight text-white">Technical Projects</h1>
-            <p class="text-slate-400 text-sm max-w-xl">A selection of engineering, modeling, and web infrastructure builds.</p>
+            <h1 class="text-3xl font-bold tracking-tight text-white">Technical Projects & Studies</h1>
+            <p class="text-slate-400 text-sm max-w-xl">Focusing exclusively on aerospace, physics, and computational builds.</p>
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2">
-            <!-- Project Card 1 -->
-            <div class="group p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentBlue/50 hover:shadow-xl hover:shadow-accentBlue/5 transition-all duration-300">
+            <!-- Space Mission Design -->
+            <div class="group p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentPurple/50 hover:shadow-xl hover:shadow-accentPurple/5 transition-all duration-300">
                 <div class="space-y-3">
                     <div class="flex items-center justify-between">
-                        <h2 class="font-semibold text-white text-base group-hover:text-accentBlue transition-colors">EPFL Space Mission Design</h2>
+                        <h2 class="font-semibold text-white text-base group-hover:text-accentPurple transition-colors">EPFL Space Mission Design</h2>
                         <div class="w-8 h-8 rounded-lg bg-accentPurple/10 border border-accentPurple/20 flex items-center justify-center text-accentPurple">
                             <i class="fas fa-satellite text-xs"></i>
                         </div>
                     </div>
                     <p class="text-sm text-slate-400 leading-relaxed">
-                        Orbital mechanics modeling, delta-v calculation, and subsystem parameter structuring following EPFL frameworks.
+                        Coursework covering spacecraft subsystems, space environment constraints, launch dynamics, and trajectory planning.
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-2 pt-2 border-t border-borderSubtle/60">
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-python text-accentBlue mr-1"></i>Python</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-space-shuttle text-accentPurple mr-1"></i>Orbital Mechanics</span>
+                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-university text-accentPurple mr-1"></i>EPFL edX</span>
+                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-rocket text-accentBlue mr-1"></i>Aerospace</span>
                 </div>
             </div>
 
-            <!-- Project Card 2 -->
+            <!-- Web Pipeline -->
             <div class="group p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentBlue/50 hover:shadow-xl hover:shadow-accentBlue/5 transition-all duration-300">
                 <div class="space-y-3">
                     <div class="flex items-center justify-between">
-                        <h2 class="font-semibold text-white text-base group-hover:text-accentBlue transition-colors">Automated CI/CD Portfolio</h2>
+                        <h2 class="font-semibold text-white text-base group-hover:text-accentBlue transition-colors">Portfolio Infrastructure</h2>
                         <div class="w-8 h-8 rounded-lg bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue">
-                            <i class="fas fa-network-wired text-xs"></i>
+                            <i class="fas fa-code-branch text-xs"></i>
                         </div>
                     </div>
                     <p class="text-sm text-slate-400 leading-relaxed">
-                        Direct-push web pipeline with seamless version control and automated Vercel edge deployment.
+                        Custom multi-page portfolio built with HTML/Tailwind CSS and deployed automatically via Git and Vercel CI/CD.
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-2 pt-2 border-t border-borderSubtle/60">
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-html5 text-orange-400 mr-1"></i>Tailwind</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-git-alt text-red-400 mr-1"></i>Git/Vercel</span>
+                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-git-alt text-red-400 mr-1"></i>Git</span>
+                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-cloud text-accentBlue mr-1"></i>Vercel</span>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="border-t border-borderSubtle py-8 text-center text-xs text-slate-500">
         <p>&copy; 2026 Henri Withöft.</p>
     </footer>
