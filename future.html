@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Aspirations — Henri Withöft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0a0b0e',
+                        cardBg: '#12141a',
+                        borderSubtle: '#1e222d',
+                        accentBlue: '#3b82f6',
+                        accentPurple: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation Bar -->
+    <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="font-semibold text-lg tracking-tight hover:text-accentBlue transition-colors">Henri Withöft</a>
+            <nav class="flex items-center gap-6 text-sm font-medium text-slate-400">
+                <a href="index.html" class="hover:text-slate-100 transition-colors">Home</a>
+                <a href="projects.html" class="hover:text-slate-100 transition-colors">Projects</a>
+                <a href="experience.html" class="hover:text-slate-100 transition-colors">Experience</a>
+                <a href="future.html" class="text-slate-100 transition-colors">Future</a>
+                <a href="contact.html" class="hover:text-slate-100 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-16 flex-grow">
+        <div class="space-y-4 mb-12">
+            <h1 class="text-3xl font-bold tracking-tight text-white">Trajectory & Future Aspirations</h1>
+            <p class="text-slate-400 text-sm max-w-xl">Long-term academic directions, research interests, and capabilities I am actively working to master.</p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2">
+            <!-- Goal Card 1 -->
+            <div class="p-6 rounded-xl bg-cardBg border border-borderSubtle space-y-3">
+                <div class="flex items-center gap-3 text-accentBlue">
+                    <i class="fas fa-graduation-cap text-lg"></i>
+                    <h2 class="font-semibold text-white text-base">University Studies in Engineering</h2>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Planning to pursue an undergraduate degree focusing on aerospace engineering, mechanical systems, or computer science to bridge theoretical physics with physical implementation.
+                </p>
+            </div>
+
+            <!-- Goal Card 2 -->
+            <div class="p-6 rounded-xl bg-cardBg border border-borderSubtle space-y-3">
+                <div class="flex items-center gap-3 text-accentPurple">
+                    <i class="fas fa-microchip text-lg"></i>
+                    <h2 class="font-semibold text-white text-base">Embedded Systems & Hardware</h2>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Moving beyond pure software into microcontroller programming (C/C++, micro-controllers, and custom circuit design) to interface code directly with hardware sensors and actuators.
+                </p>
+            </div>
+
+            <!-- Goal Card 3 -->
+            <div class="p-6 rounded-xl bg-cardBg border border-borderSubtle space-y-3">
+                <div class="flex items-center gap-3 text-emerald-400">
+                    <i class="fas fa-globe-europe text-lg"></i>
+                    <h2 class="font-semibold text-white text-base">Collaborative Research</h2>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Aiming to participate in multi-disciplinary student teams or academic research groups working on sustainable energy solutions, aerospace navigation, or robotics.
+                </p>
+            </div>
+
+            <!-- Goal Card 4 -->
+            <div class="p-6 rounded-xl bg-cardBg border border-borderSubtle space-y-3">
+                <div class="flex items-center gap-3 text-amber-400">
+                    <i class="fas fa-book-open text-lg"></i>
+                    <h2 class="font-semibold text-white text-base">Advanced Theoretical Physics</h2>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Deepening self-study in classical mechanics, electromagnetism, and linear algebra to establish a rock-solid foundation for advanced university-level coursework.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-borderSubtle py-8 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Henri Withöft.</p>
+    </footer>
+
+</body>
+</html>
