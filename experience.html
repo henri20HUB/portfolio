@@ -11,10 +11,11 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#0a0b0e',
-                        cardBg: '#12141a',
-                        borderSubtle: '#1e222d',
+                        darkBg: '#090a0f',
+                        cardBg: '#11131a',
+                        borderSubtle: '#1e2230',
                         accentBlue: '#3b82f6',
+                        accentPurple: '#8b5cf6',
                     }
                 }
             }
@@ -24,13 +25,13 @@
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between">
 
     <!-- Navigation Bar -->
-    <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-md sticky top-0 z-50">
+    <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-xl sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="index.html" class="font-semibold text-lg tracking-tight hover:text-accentBlue transition-colors">Henri Withöft</a>
+            <a href="index.html" class="font-bold text-lg tracking-tight hover:text-accentBlue transition-colors">Henri Withöft</a>
             <nav class="flex items-center gap-6 text-sm font-medium text-slate-400">
                 <a href="index.html" class="hover:text-slate-100 transition-colors">Home</a>
                 <a href="projects.html" class="hover:text-slate-100 transition-colors">Projects</a>
-                <a href="experience.html" class="text-slate-100 transition-colors">Experience</a>
+                <a href="experience.html" class="text-white font-semibold">Experience</a>
                 <a href="future.html" class="hover:text-slate-100 transition-colors">Future</a>
                 <a href="contact.html" class="hover:text-slate-100 transition-colors">Contact</a>
             </nav>
@@ -40,31 +41,44 @@
     <!-- Main Content -->
     <main class="max-w-4xl mx-auto px-6 py-16 flex-grow">
         <div class="space-y-4 mb-12">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentPurple/10 border border-accentPurple/20 text-accentPurple text-xs font-mono">
+                <i class="fas fa-history"></i> /experience
+            </div>
             <h1 class="text-3xl font-bold tracking-tight text-white">Experience & Background</h1>
-            <p class="text-slate-400 text-sm max-w-xl">Academic milestones, continuous advanced coursework, and institutional involvements.</p>
+            <p class="text-slate-400 text-sm max-w-xl">Academic progress, specialized coursework, and scholarship activities.</p>
         </div>
 
-        <div class="space-y-6">
+        <div class="relative border-l border-borderSubtle ml-4 pl-6 space-y-8">
             <!-- Timeline Item 1 -->
-            <div class="p-6 rounded-xl bg-cardBg border border-borderSubtle space-y-3">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                    <h2 class="font-semibold text-white text-base">Abitur Candidate & Academic Scholar</h2>
-                    <span class="text-xs font-mono text-slate-400">Present</span>
+            <div class="relative group">
+                <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-accentBlue border-4 border-darkBg group-hover:scale-125 transition-transform"></div>
+                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-2 hover:border-slate-700 transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <h2 class="font-semibold text-white text-base flex items-center gap-2">
+                            <i class="fas fa-graduation-cap text-accentBlue text-sm"></i> Abitur Candidate & Scholar
+                        </h2>
+                        <span class="text-xs font-mono text-slate-400 bg-darkBg px-2.5 py-1 rounded-md border border-borderSubtle">Present</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Specializing in STEM tracks with advanced mathematics, physics, and empirical problem solving.
+                    </p>
                 </div>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Focusing heavily on advanced mathematics, natural sciences, and rigorous analytical writing while preparing for higher education.
-                </p>
             </div>
 
             <!-- Timeline Item 2 -->
-            <div class="p-6 rounded-xl bg-cardBg border border-borderSubtle space-y-3">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                    <h2 class="font-semibold text-white text-base">Participant — Space Mission Design</h2>
-                    <span class="text-xs font-mono text-slate-400">EPFL (edX)</span>
+            <div class="relative group">
+                <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-accentPurple border-4 border-darkBg group-hover:scale-125 transition-transform"></div>
+                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-2 hover:border-slate-700 transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <h2 class="font-semibold text-white text-base flex items-center gap-2">
+                            <i class="fas fa-user-astronaut text-accentPurple text-sm"></i> EPFL Space Mission Design
+                        </h2>
+                        <span class="text-xs font-mono text-slate-400 bg-darkBg px-2.5 py-1 rounded-md border border-borderSubtle">edX Coursework</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Mastering space environment characteristics, launch dynamics, propulsion trade-offs, and payload constraints.
+                    </p>
                 </div>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Studying spacecraft subsystems, delta-v budgeting, and system-level engineering constraints applied to interplanetary architecture.
-                </p>
             </div>
         </div>
     </main>

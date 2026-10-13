@@ -11,10 +11,11 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#0a0b0e',
-                        cardBg: '#12141a',
-                        borderSubtle: '#1e222d',
+                        darkBg: '#090a0f',
+                        cardBg: '#11131a',
+                        borderSubtle: '#1e2230',
                         accentBlue: '#3b82f6',
+                        accentPurple: '#8b5cf6',
                     }
                 }
             }
@@ -24,15 +25,15 @@
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between">
 
     <!-- Navigation Bar -->
-    <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-md sticky top-0 z-50">
+    <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-xl sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="index.html" class="font-semibold text-lg tracking-tight hover:text-accentBlue transition-colors">Henri Withöft</a>
+            <a href="index.html" class="font-bold text-lg tracking-tight hover:text-accentBlue transition-colors">Henri Withöft</a>
             <nav class="flex items-center gap-6 text-sm font-medium text-slate-400">
                 <a href="index.html" class="hover:text-slate-100 transition-colors">Home</a>
                 <a href="projects.html" class="hover:text-slate-100 transition-colors">Projects</a>
                 <a href="experience.html" class="hover:text-slate-100 transition-colors">Experience</a>
                 <a href="future.html" class="hover:text-slate-100 transition-colors">Future</a>
-                <a href="contact.html" class="text-slate-100 transition-colors">Contact</a>
+                <a href="contact.html" class="text-white font-semibold">Contact</a>
             </nav>
         </div>
     </header>
@@ -40,29 +41,31 @@
     <!-- Main Content -->
     <main class="max-w-4xl mx-auto px-6 py-16 flex-grow">
         <div class="space-y-4 mb-12">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
+                <i class="fas fa-paper-plane"></i> /contact
+            </div>
             <h1 class="text-3xl font-bold tracking-tight text-white">Get in Touch</h1>
-            <p class="text-slate-400 text-sm max-w-xl">Feel free to reach out for academic inquiries, project collaborations, or discussions regarding engineering.</p>
+            <p class="text-slate-400 text-sm max-w-xl">Direct contact for academic inquiries, research discussions, or projects.</p>
         </div>
 
-        <div class="max-w-xl p-8 rounded-xl bg-cardBg border border-borderSubtle space-y-6">
+        <div class="max-w-md p-8 rounded-2xl bg-cardBg border border-borderSubtle space-y-6 shadow-xl">
             <div class="flex items-center gap-4 text-slate-300">
-                <div class="w-12 h-12 rounded-lg bg-darkBg border border-borderSubtle flex items-center justify-center text-accentBlue text-lg">
+                <div class="w-12 h-12 rounded-xl bg-darkBg border border-borderSubtle flex items-center justify-center text-accentBlue text-lg">
                     <i class="fas fa-envelope"></i>
                 </div>
                 <div>
-                    <p class="text-xs text-slate-400 font-medium tracking-wide uppercase">Direct Email</p>
+                    <p class="text-xs text-slate-400 font-medium tracking-wider uppercase">Direct Email</p>
                     <a href="mailto:Henri.withoeft@gmail.com" class="text-base font-semibold text-white hover:text-accentBlue transition-colors">
                         Henri.withoeft@gmail.com
                     </a>
                 </div>
             </div>
 
-            <div class="pt-4 border-t border-borderSubtle flex items-center gap-4 text-sm text-slate-400">
+            <div class="pt-6 border-t border-borderSubtle flex items-center justify-between text-sm text-slate-400">
                 <a href="https://github.com/henri20HUB" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
-                    <i class="fab fa-github"></i> GitHub
+                    <i class="fab fa-github text-base"></i> GitHub
                 </a>
-                <span>&bull;</span>
-                <span class="text-slate-500">Based in Germany</span>
+                <span class="text-xs font-mono text-slate-500"><i class="fas fa-map-marker-alt text-slate-500 mr-1"></i>Germany</span>
             </div>
         </div>
     </main>
@@ -74,4 +77,3 @@
 
 </body>
 </html>
-

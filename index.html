@@ -11,9 +11,9 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#0a0b0e',
-                        cardBg: '#12141a',
-                        borderSubtle: '#1e222d',
+                        darkBg: '#090a0f',
+                        cardBg: '#11131a',
+                        borderSubtle: '#1e2230',
                         accentBlue: '#3b82f6',
                         accentPurple: '#8b5cf6',
                     }
@@ -22,14 +22,21 @@
         }
     </script>
 </head>
-<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between">
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+
+    <!-- Subtle Background Glow Effects -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-accentBlue/10 blur-[120px] pointer-events-none rounded-full"></div>
+    <div class="absolute top-40 right-10 w-[300px] h-[300px] bg-accentPurple/10 blur-[100px] pointer-events-none rounded-full"></div>
 
     <!-- Navigation Bar -->
-    <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-md sticky top-0 z-50">
+    <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-xl sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="index.html" class="font-semibold text-lg tracking-tight hover:text-accentBlue transition-colors">Henri Withöft</a>
+            <a href="index.html" class="font-bold text-lg tracking-tight hover:text-accentBlue transition-colors flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-accentBlue animate-ping"></span>
+                Henri Withöft
+            </a>
             <nav class="flex items-center gap-6 text-sm font-medium text-slate-400">
-                <a href="index.html" class="text-slate-100 transition-colors">Home</a>
+                <a href="index.html" class="text-white font-semibold">Home</a>
                 <a href="projects.html" class="hover:text-slate-100 transition-colors">Projects</a>
                 <a href="experience.html" class="hover:text-slate-100 transition-colors">Experience</a>
                 <a href="future.html" class="hover:text-slate-100 transition-colors">Future</a>
@@ -39,39 +46,39 @@
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-6 py-20 flex-grow">
+    <main class="max-w-4xl mx-auto px-6 py-20 flex-grow relative z-10">
         <section class="space-y-8">
-            <div class="flex flex-wrap gap-2">
-                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accentBlue/30 bg-accentBlue/10 text-accentBlue text-xs font-semibold tracking-wide">
-                    <span class="w-2 h-2 rounded-full bg-accentBlue animate-pulse"></span>
-                    Abitur Candidate & Scholar
+            <div class="flex flex-wrap gap-3">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accentBlue/30 bg-accentBlue/10 text-accentBlue text-xs font-semibold tracking-wide backdrop-blur-sm">
+                    <i class="fas fa-user-graduate text-xs"></i> Abitur Candidate & Scholar
                 </span>
-                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accentPurple/30 bg-accentPurple/10 text-accentPurple text-xs font-semibold tracking-wide">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accentPurple/30 bg-accentPurple/10 text-accentPurple text-xs font-semibold tracking-wide backdrop-blur-sm">
                     <i class="fas fa-rocket text-xs"></i> EPFL Space Mission Design
                 </span>
             </div>
 
-            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white">
-                Building technical depth through rigorous inquiry and hands-on engineering.
+            <!-- Shorter Main Heading -->
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Student Developer & Space Mission Design Scholar.
             </h1>
 
             <p class="text-lg text-slate-400 leading-relaxed max-w-2xl">
-                I am a student developer and Abitur candidate deeply focused on systems engineering, space mission design, and computational problem-solving. This site serves as a record of my projects, ongoing research directions, and professional trajectory.
+                Focused on systems engineering, computational mechanics, and clean technical execution. Welcome to my central repository of projects, research directions, and trajectory.
             </p>
 
-            <div class="flex items-center gap-4 pt-4">
-                <a href="projects.html" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-all shadow-sm">
-                    Explore Projects &rarr;
+            <div class="flex flex-wrap items-center gap-4 pt-4">
+                <a href="projects.html" class="px-6 py-3 rounded-xl bg-accentBlue hover:bg-blue-600 text-white font-medium text-sm transition-all shadow-lg shadow-accentBlue/25 flex items-center gap-2">
+                    <i class="fas fa-code"></i> Explore Projects &rarr;
                 </a>
-                <a href="future.html" class="px-5 py-2.5 rounded-lg border border-borderSubtle hover:border-slate-700 bg-cardBg text-slate-300 font-medium text-sm transition-all">
-                    View Future Aspirations
+                <a href="future.html" class="px-6 py-3 rounded-xl border border-borderSubtle hover:border-slate-600 bg-cardBg/60 backdrop-blur-md text-slate-300 font-medium text-sm transition-all flex items-center gap-2">
+                    <i class="fas fa-compass text-accentPurple"></i> View Aspirations
                 </a>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-borderSubtle py-8 text-center text-xs text-slate-500">
+    <footer class="border-t border-borderSubtle py-8 text-center text-xs text-slate-500 relative z-10">
         <p>&copy; 2026 Henri Withöft. Built with pure HTML & Tailwind.</p>
     </footer>
 
