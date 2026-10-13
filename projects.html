@@ -37,54 +37,90 @@
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-16 flex-grow">
-        <div class="space-y-4 mb-12">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
-                <i class="fas fa-terminal"></i> /technical-projects
-            </div>
-            <h1 class="text-3xl font-bold tracking-tight text-white">Technical Projects & Studies</h1>
-            <p class="text-slate-400 text-sm max-w-xl">Focusing exclusively on aerospace, physics, and computational builds.</p>
-        </div>
+    <main class="max-w-4xl mx-auto px-6 py-16 flex-grow space-y-16">
 
-        <div class="grid gap-6 sm:grid-cols-2">
-            <!-- Space Mission Design -->
-            <div class="group p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentPurple/50 hover:shadow-xl hover:shadow-accentPurple/5 transition-all duration-300">
-                <div class="space-y-3">
-                    <div class="flex items-center justify-between">
-                        <h2 class="font-semibold text-white text-base group-hover:text-accentPurple transition-colors">EPFL Space Mission Design</h2>
-                        <div class="w-8 h-8 rounded-lg bg-accentPurple/10 border border-accentPurple/20 flex items-center justify-center text-accentPurple">
-                            <i class="fas fa-satellite text-xs"></i>
-                        </div>
-                    </div>
-                    <p class="text-sm text-slate-400 leading-relaxed">
-                        Coursework covering spacecraft subsystems, space environment constraints, launch dynamics, and trajectory planning.
-                    </p>
+        <!-- SECTION 1: Technical Builds -->
+        <div class="space-y-6">
+            <div class="space-y-2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
+                    <i class="fas fa-terminal"></i> /technical-builds
                 </div>
-                <div class="flex flex-wrap gap-2 pt-2 border-t border-borderSubtle/60">
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-university text-accentPurple mr-1"></i>EPFL edX</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-rocket text-accentBlue mr-1"></i>Aerospace</span>
-                </div>
+                <h1 class="text-3xl font-bold tracking-tight text-white">Technical Builds & Robotics</h1>
             </div>
 
-            <!-- Web Pipeline -->
-            <div class="group p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentBlue/50 hover:shadow-xl hover:shadow-accentBlue/5 transition-all duration-300">
-                <div class="space-y-3">
-                    <div class="flex items-center justify-between">
-                        <h2 class="font-semibold text-white text-base group-hover:text-accentBlue transition-colors">Portfolio Infrastructure</h2>
-                        <div class="w-8 h-8 rounded-lg bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue">
-                            <i class="fas fa-code-branch text-xs"></i>
+            <div class="grid gap-6 sm:grid-cols-2">
+                <!-- Robotic Arm -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentBlue/50 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h2 class="font-semibold text-white text-base">Robotic Arm Project</h2>
+                            <span class="text-xs font-mono text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded">In Progress</span>
                         </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Experimenting with Raspberry Pi microcomputers and Arduino microcontrollers to construct and program a multi-axis robotic arm.
+                        </p>
                     </div>
-                    <p class="text-sm text-slate-400 leading-relaxed">
-                        Custom multi-page portfolio built with HTML/Tailwind CSS and deployed automatically via Git and Vercel CI/CD.
-                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2 border-t border-borderSubtle/60">
+                        <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-raspberry-pi text-red-400 mr-1"></i>Raspberry Pi</span>
+                        <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-microchip text-accentBlue mr-1"></i>Arduino</span>
+                    </div>
                 </div>
-                <div class="flex flex-wrap gap-2 pt-2 border-t border-borderSubtle/60">
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-git-alt text-red-400 mr-1"></i>Git</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-cloud text-accentBlue mr-1"></i>Vercel</span>
+
+                <!-- Portfolio Infrastructure -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentBlue/50 transition-all">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h2 class="font-semibold text-white text-base">Portfolio Infrastructure</h2>
+                            <div class="w-8 h-8 rounded-lg bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue">
+                                <i class="fas fa-code-branch text-xs"></i>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Custom multi-page portfolio built with HTML and Tailwind CSS, integrated with Git version control and Vercel edge deployment.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2 border-t border-borderSubtle/60">
+                        <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-git-alt text-red-400 mr-1"></i>Git</span>
+                        <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-cloud text-accentBlue mr-1"></i>Vercel</span>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- SECTION 2: Courses & Extra Academic Work -->
+        <div class="space-y-6 pt-8 border-t border-borderSubtle">
+            <div class="space-y-2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentPurple/10 border border-accentPurple/20 text-accentPurple text-xs font-mono">
+                    <i class="fas fa-laptop-code"></i> /courses-and-studies
+                </div>
+                <h2 class="text-2xl font-bold tracking-tight text-white">Courses & Academic Studies</h2>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2">
+                <!-- CS50x -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-3">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-white text-base">Harvard CS50x</h3>
+                        <i class="fas fa-graduation-cap text-accentPurple"></i>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Harvard University's introduction to computer science, algorithms, memory management, and data structures.
+                    </p>
+                </div>
+
+                <!-- EPFL Space Mission Design -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-3">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-white text-base">EPFL Space Mission Design</h3>
+                        <i class="fas fa-rocket text-accentPurple"></i>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Coursework covering orbital mechanics, launch dynamics, spacecraft subsystems, and mission constraints.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer class="border-t border-borderSubtle py-8 text-center text-xs text-slate-500">

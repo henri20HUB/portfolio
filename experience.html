@@ -39,50 +39,90 @@
 
     <main class="max-w-4xl mx-auto px-6 py-16 flex-grow space-y-16">
         
-        <!-- SECTION 1: STEM & Academic Focus -->
+        <!-- SECTION 1: Academic Timeline -->
         <div class="space-y-6">
             <div class="space-y-2">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
-                    <i class="fas fa-atom"></i> STEM & Physics Track
+                    <i class="fas fa-graduation-cap"></i> /academic-background
                 </div>
                 <h1 class="text-3xl font-bold tracking-tight text-white">Academic Background</h1>
+                <p class="text-slate-400 text-sm max-w-xl">Educational timeline spanning secondary education, UK studies, and university-level coursework.</p>
             </div>
 
-            <div class="grid gap-4">
-                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-2">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                        <h2 class="font-semibold text-white text-base flex items-center gap-2">
-                            <i class="fas fa-graduation-cap text-accentBlue"></i> Abitur Candidate & Scholar
-                        </h2>
-                        <span class="text-xs font-mono text-slate-400 bg-darkBg px-2.5 py-1 rounded-md border border-borderSubtle">In Progress</span>
+            <div class="relative border-l border-borderSubtle ml-4 pl-6 space-y-8">
+                <!-- 1. ZP10 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-600 border-4 border-darkBg group-hover:scale-125 transition-transform"></div>
+                    <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-2">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <h2 class="font-semibold text-white text-base flex items-center gap-2">
+                                <i class="fas fa-school text-slate-400"></i> ZP10 Abschluss
+                            </h2>
+                            <span class="text-xs font-mono text-slate-400 bg-darkBg px-2.5 py-1 rounded-md border border-borderSubtle">Comenius-Gymnasium</span>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Completed intermediate secondary education examination (Zentrale Prüfungen 10) at Comenius-Gymnasium.
+                        </p>
                     </div>
-                    <p class="text-sm text-slate-400 leading-relaxed">
-                        Completing upper secondary education with a major focus on mathematics and physics analytical problem-solving.
-                    </p>
                 </div>
 
-                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-2">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                        <h2 class="font-semibold text-white text-base flex items-center gap-2">
-                            <i class="fas fa-user-astronaut text-accentPurple"></i> EPFL Space Mission Design Coursework
-                        </h2>
-                        <span class="text-xs font-mono text-slate-400 bg-darkBg px-2.5 py-1 rounded-md border border-borderSubtle">edX</span>
+                <!-- 2. HHU Schülerstudium -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-accentPurple border-4 border-darkBg group-hover:scale-125 transition-transform"></div>
+                    <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-2">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <h2 class="font-semibold text-white text-base flex items-center gap-2">
+                                <i class="fas fa-university text-accentPurple"></i> HHU Schülerstudium
+                            </h2>
+                            <span class="text-xs font-mono text-slate-400 bg-darkBg px-2.5 py-1 rounded-md border border-borderSubtle">Heinrich-Heine-Universität Düsseldorf</span>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Participated in early university studies (Schülerstudium) attending university-level lectures and coursework alongside secondary school.
+                        </p>
                     </div>
-                    <p class="text-sm text-slate-400 leading-relaxed">
-                        Study of space engineering systems, mission constraints, payload requirements, and orbit mechanics.
-                    </p>
+                </div>
+
+                <!-- 3. GCSEs -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-accentBlue border-4 border-darkBg group-hover:scale-125 transition-transform"></div>
+                    <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-2">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <h2 class="font-semibold text-white text-base flex items-center gap-2">
+                                <i class="fas fa-certificate text-accentBlue"></i> GCSE Examinations
+                            </h2>
+                            <span class="text-xs font-mono text-slate-400 bg-darkBg px-2.5 py-1 rounded-md border border-borderSubtle">Pocklington School (UK)</span>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Studied abroad and completed GCSE qualifications at Pocklington School in England.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4. Abitur -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-emerald-400 border-4 border-darkBg group-hover:scale-125 transition-transform"></div>
+                    <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-2">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <h2 class="font-semibold text-white text-base flex items-center gap-2">
+                                <i class="fas fa-user-graduate text-emerald-400"></i> Abitur Candidate
+                            </h2>
+                            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-md">In Progress — Expected 2028</span>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Currently completing upper secondary education (Abitur) focusing on advanced mathematics and physics.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- SECTION 2: Non-Technical Humanities & Independent Projects -->
+        <!-- SECTION 2: Humanities & Independent Research -->
         <div class="space-y-6 pt-8 border-t border-borderSubtle">
             <div class="space-y-2">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-mono">
-                    <i class="fas fa-book-bookmark"></i> Humanities & Broad Interests
+                    <i class="fas fa-book-bookmark"></i> Humanities & Research
                 </div>
-                <h2 class="text-2xl font-bold tracking-tight text-white">Independent Research & Writing</h2>
-                <p class="text-slate-400 text-sm max-w-xl">Interdisciplinary work and research distinct from my primary technical pursuits.</p>
+                <h2 class="text-2xl font-bold tracking-tight text-white">Independent Research</h2>
             </div>
 
             <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-2">
@@ -90,10 +130,10 @@
                     <h3 class="font-semibold text-white text-base flex items-center gap-2">
                         <i class="fas fa-landmark text-amber-400"></i> History Research Project
                     </h3>
-                    <span class="text-xs font-mono text-slate-400 bg-darkBg px-2.5 py-1 rounded-md border border-borderSubtle">Academic Research</span>
+                    <span class="text-xs font-mono text-slate-400 bg-darkBg px-2.5 py-1 rounded-md border border-borderSubtle">Academic Writing</span>
                 </div>
                 <p class="text-sm text-slate-400 leading-relaxed">
-                    Independent historical investigation utilizing source critical methodology, archive analysis, and structured academic writing.
+                    Independent historical research utilizing primary sources, archive evaluation, and academic methodology.
                 </p>
             </div>
         </div>
