@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henri Withöft | CS, Physics & Aerospace</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        spaceBg: '#0b0f19',
+                        cardBg: '#111827',
+                        accentBlue: '#38bdf8',
+                        accentPurple: '#a855f7'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-spaceBg text-slate-200 font-sans antialiased selection:bg-accentBlue selection:text-slate-900 min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-spaceBg/80 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-white">
+                HENRI<span class="text-accentBlue">.WITHÖFT</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-accentBlue transition-colors">About</a>
+                <a href="#focus" class="hover:text-accentBlue transition-colors">Focus Areas</a>
+                <a href="#highlights" class="hover:text-accentBlue transition-colors">Highlights</a>
+                <a href="#contact" class="hover:text-accentBlue transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Hero / Intro Section -->
+        <section id="hero" class="space-y-6 pt-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accentBlue/30 bg-accentBlue/10 text-accentBlue text-xs font-semibold tracking-wide">
+                <span class="w-2 h-2 rounded-full bg-accentBlue animate-pulse"></span>
+                Abitur Candidate & Scholar
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Exploring the frontiers of <br>
+                <span class="bg-gradient-to-r from-accentBlue via-accentPurple to-indigo-400 bg-clip-text text-transparent">
+                    CS, Physics & Aerospace.
+                </span>
+            </h1>
+
+            <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+                High school student with an international academic background (Düsseldorf & UK). Passionate about combining analytical rigor, algorithms, and physical principles to solve real-world engineering challenges.
+            </p>
+
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#contact" class="px-6 py-3 rounded-lg bg-accentBlue text-slate-950 font-semibold hover:bg-sky-400 transition-all shadow-lg shadow-accentBlue/20">
+                    Get in Touch
+                </a>
+                <a href="https://www.linkedin.com/in/henri-with%C3%B6ft-70763440b/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-lg border border-slate-700 hover:border-slate-500 font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-2">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="space-y-6">
+            <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+                <span class="text-accentBlue">01.</span> About Me
+            </h2>
+            <div class="bg-cardBg p-8 rounded-2xl border border-slate-800 space-y-4 text-slate-300 leading-relaxed">
+                <p>
+                    I am currently completing my Abitur at <strong>Comenius-Gymnasium Düsseldorf</strong>, following my GCSE exchange year at <strong>Pocklington School in the UK</strong>. My academic trajectory is defined by a curiosity for how theoretical mathematics and physics translate into modern computational systems and space operations.
+                </p>
+                <p>
+                    From completing Harvard’s <strong>CS50x</strong> to tackling university lectures in <strong>Experimental Mechanics</strong> at Heinrich-Heine-Universität and completing EPFL's <strong>Space Mission Design and Operations</strong>, I actively seek rigorous academic challenges beyond the standard high school curriculum.
+                </p>
+                <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm font-medium">
+                    <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800/80">
+                        <span class="text-slate-500 block text-xs">Languages</span>
+                        German (Native), English (Fluent), French (Basic)
+                    </div>
+                    <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800/80">
+                        <span class="text-slate-500 block text-xs">Education</span>
+                        Abitur 2028 | GCSEs (UK)
+                    </div>
+                    <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800/80">
+                        <span class="text-slate-500 block text-xs">Location</span>
+                        Düsseldorf, Germany
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic & Technical Focus -->
+        <section id="focus" class="space-y-6">
+            <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+                <span class="text-accentBlue">02.</span> Core Disciplines
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Computer Science -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800 hover:border-slate-700 transition-all space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-accentBlue/10 text-accentBlue flex items-center justify-center text-lg">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white">Computer Science</h3>
+                    <p class="text-slate-400 text-sm">
+                        Algorithms, data structures, computational thinking, C, Python, SQL, and web development principles learned through CS50x.
+                    </p>
+                </div>
+
+                <!-- Physics & Mechanics -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800 hover:border-slate-700 transition-all space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-accentPurple/10 text-accentPurple flex items-center justify-center text-lg">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white">Physics & Mechanics</h3>
+                    <p class="text-slate-400 text-sm">
+                        University-level lectures and experimentation in Experimental Mechanics completed via Heinrich-Heine-Universität Düsseldorf.
+                    </p>
+                </div>
+
+                <!-- Aerospace & Systems -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800 hover:border-slate-700 transition-all space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg">
+                        <i class="fas fa-shuttle-space"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white">Aerospace Engineering</h3>
+                    <p class="text-slate-400 text-sm">
+                        Orbital mechanics, spacecraft systems, propulsion, attitude determination, and space mission design (EPFL edX course).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights & Achievements -->
+        <section id="highlights" class="space-y-6">
+            <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+                <span class="text-accentBlue">03.</span> Accomplishments & Credentials
+            </h2>
+
+            <div class="space-y-4">
+                <!-- Highlight 1: EPFL -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <span class="text-xs text-accentBlue font-semibold uppercase tracking-wider">edX Verified Certificate</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Space Mission Design and Operations</h3>
+                        <p class="text-slate-400 text-sm mt-1">École Polytechnique Fédérale de Lausanne (EPFL)</p>
+                        <p class="text-xs text-slate-500 mt-2">Credential ID: <code class="text-slate-400">69310ea121934419a1554bffe41eec6a</code></p>
+                    </div>
+                    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded text-xs font-mono">Issued Oct 2026</span>
+                </div>
+
+                <!-- Highlight 2: CS50 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <span class="text-xs text-accentBlue font-semibold uppercase tracking-wider">Course Certificate</span>
+                        <h3 class="text-lg font-bold text-white mt-1">CS50x: Introduction to Computer Science</h3>
+                        <p class="text-slate-400 text-sm mt-1">Harvard University</p>
+                        <p class="text-xs text-slate-500 mt-2">Credential ID: <code class="text-slate-400">433365b7-e595-4dfa-8bb4-b5b364f66201</code></p>
+                    </div>
+                    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded text-xs font-mono">Issued May 2026</span>
+                </div>
+
+                <!-- Highlight 3: Published Book -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <span class="text-xs text-accentPurple font-semibold uppercase tracking-wider">Publication & Research</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Book Publication: "Die Unglaubliche Geschichte von Rosa Willinger"</h3>
+                        <p class="text-slate-400 text-sm mt-1">Published by Edition Virgines • Co-Author & Lead Researcher</p>
+                        <p class="text-xs text-slate-500 mt-2">Research on Jewish history in the Rhineland submitted to the Geschichtswettbewerb des Bundespräsidenten.</p>
+                    </div>
+                    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded text-xs font-mono">June 2025</span>
+                </div>
+
+                <!-- Highlight 4: HHU Düsseldorf -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <span class="text-xs text-accentBlue font-semibold uppercase tracking-wider">Schülerstudium</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Experimental Mechanics</h3>
+                        <p class="text-slate-400 text-sm mt-1">Heinrich-Heine-Universität Düsseldorf</p>
+                        <p class="text-xs text-slate-500 mt-2">University-level lectures & laboratory studies in physical mechanics.</p>
+                    </div>
+                    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded text-xs font-mono">2024 - 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="space-y-6 text-center py-12 border-t border-slate-800">
+            <h2 class="text-3xl font-extrabold text-white">Let's Connect</h2>
+            <p class="text-slate-400 max-w-lg mx-auto">
+                Whether you want to discuss academic collaborations, computer science projects, space systems research, or historical studies—feel free to reach out.
+            </p>
+            <div class="pt-4 flex justify-center gap-4">
+                <a href="https://www.linkedin.com/in/henri-with%C3%B6ft-70763440b/" target="_blank" rel="noopener noreferrer" class="px-8 py-3 rounded-lg bg-accentBlue text-slate-950 font-bold hover:bg-sky-400 transition-all flex items-center gap-2">
+                    <i class="fab fa-linkedin text-lg"></i> Connect on LinkedIn
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
+        <p>© 2026 Henri Withöft. Built with HTML & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
