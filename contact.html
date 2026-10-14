@@ -37,36 +37,57 @@
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-16 flex-grow">
-        <div class="space-y-4 mb-12">
+    <main class="max-w-4xl mx-auto px-6 py-16 flex-grow space-y-8">
+        <div class="space-y-4 mb-8">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
                 <i class="fas fa-paper-plane"></i> /contact
             </div>
-            <h1 class="text-3xl font-bold tracking-tight text-white">Get in Touch</h1>
-            <p class="text-slate-400 text-sm max-w-xl">Direct contacts for academic inquiries, university connections, or discussions.</p>
+            <h1 class="text-3xl font-bold tracking-tight text-white">Get in Touch & Credentials</h1>
+            <p class="text-slate-400 text-sm max-w-xl">Direct contacts and academic CV download for admissions or inquiries.</p>
         </div>
 
-        <div class="max-w-md p-8 rounded-2xl bg-cardBg border border-borderSubtle space-y-6 shadow-xl">
-            <div class="flex items-center gap-4 text-slate-300">
-                <div class="w-12 h-12 rounded-xl bg-darkBg border border-borderSubtle flex items-center justify-center text-accentBlue text-lg">
-                    <i class="fas fa-envelope"></i>
+        <div class="grid gap-6 sm:grid-cols-2 max-w-2xl">
+            <!-- Email & Socials -->
+            <div class="p-8 rounded-2xl bg-cardBg border border-borderSubtle space-y-6 shadow-xl flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 text-slate-300">
+                        <div class="w-12 h-12 rounded-xl bg-darkBg border border-borderSubtle flex items-center justify-center text-accentBlue text-lg">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium tracking-wider uppercase">Direct Email</p>
+                            <a href="mailto:Henri.withoeft@gmail.com" class="text-sm font-semibold text-white hover:text-accentBlue transition-colors break-all">
+                                Henri.withoeft@gmail.com
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <p class="text-xs text-slate-400 font-medium tracking-wider uppercase">Direct Email</p>
-                    <a href="mailto:Henri.withoeft@gmail.com" class="text-base font-semibold text-white hover:text-accentBlue transition-colors">
-                        Henri.withoeft@gmail.com
+
+                <div class="pt-6 border-t border-borderSubtle flex items-center justify-between text-sm text-slate-400">
+                    <a href="https://www.linkedin.com/in/henri-withöft-2a106b338/" target="_blank" class="hover:text-accentBlue transition-colors flex items-center gap-2">
+                        <i class="fab fa-linkedin text-base text-accentBlue"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/henri20HUB" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
+                        <i class="fab fa-github text-base"></i> GitHub
                     </a>
                 </div>
             </div>
 
-            <div class="pt-6 border-t border-borderSubtle flex items-center justify-between text-sm text-slate-400">
-                <a href="https://www.linkedin.com/in/henri-withöft-2a106b338/" target="_blank" class="hover:text-accentBlue transition-colors flex items-center gap-2">
-                    <i class="fab fa-linkedin text-base text-accentBlue"></i> LinkedIn
+            <!-- Download CV Card -->
+            <div class="p-8 rounded-2xl bg-cardBg border border-borderSubtle space-y-6 shadow-xl flex flex-col justify-between">
+                <div class="space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue text-lg">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h2 class="text-lg font-semibold text-white">Academic CV</h2>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Formal 1-page overview of educational history, certifications, published research, and technical background.
+                    </p>
+                </div>
+
+                <a href="Henri_Withoft_CV.pdf" download target="_blank" class="w-full py-3 px-4 rounded-xl bg-accentBlue hover:bg-blue-600 text-white text-xs font-semibold tracking-wide flex items-center justify-center gap-2 transition-all shadow-lg shadow-accentBlue/20">
+                    <i class="fas fa-download"></i> Download PDF CV
                 </a>
-                <a href="https://github.com/henri20HUB" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
-                    <i class="fab fa-github text-base"></i> GitHub
-                </a>
-                <span class="text-xs font-mono text-slate-500"><i class="fas fa-map-marker-alt text-slate-500 mr-1"></i>Germany</span>
             </div>
         </div>
     </main>
