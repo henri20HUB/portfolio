@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Henri Withöft — Academic CV</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.2cm 1.5cm;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #1a1a1a;
+            background: #ffffff;
+            line-height: 1.35;
+            font-size: 9.5pt;
+        }
+        a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        /* Header */
+        header {
+            border-b: 1.5px solid #1a1a1a;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .name {
+            font-size: 20pt;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+        .subtitle {
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: #444;
+            margin-top: 2px;
+        }
+        .contact-info {
+            text-align: right;
+            font-size: 8.5pt;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-size: 10pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 2px;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        /* Entry Layout */
+        .entry {
+            margin-bottom: 7px;
+        }
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 9.5pt;
+        }
+        .entry-sub {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: #444;
+            font-size: 9pt;
+            margin-bottom: 2px;
+        }
+        .entry-desc {
+            font-size: 8.8pt;
+            color: #333;
+            text-align: justify;
+        }
+        ul.bullet-list {
+            list-style-type: disc;
+            margin-left: 14px;
+            font-size: 8.8pt;
+            color: #333;
+        }
+        ul.bullet-list li {
+            margin-bottom: 1.5px;
+        }
+
+        /* Grid Layout for Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            row-gap: 3px;
+            font-size: 8.8pt;
+        }
+        .skills-label {
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        /* Print Controls */
+        @media print {
+            body { -webkit-print-color-adjust: exact; }
+            .no-print { display: none; }
+        }
+        .print-btn-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #000;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-family: sans-serif;
+            font-size: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- On-screen Print Button -->
+    <div class="print-btn-container no-print" onclick="window.print()">
+        📄 Save / Export as PDF
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <h1 class="name">Henri Withöft</h1>
+            <p class="subtitle">Physics & Aerospace Engineering Aspirant &bull; Abitur Scholar</p>
+        </div>
+        <div class="contact-info">
+            <p>Düsseldorf, Germany</p>
+            <p>Email: Henri.withoeft@gmail.com</p>
+            <p>GitHub: github.com/henri20HUB</p>
+            <p>LinkedIn: linkedin.com/in/henri-withöft-2a106b338</p>
+        </div>
+    </header>
+
+    <!-- Academic Goals -->
+    <section>
+        <h2 class="section-title">Academic Profile & Objectives</h2>
+        <p class="entry-desc">
+            Abitur candidate with an international academic background focused on Physics, Aerospace/Electrical Engineering, and Computational Problem-Solving. Targeting undergraduate studies at <strong>ETH Zürich</strong>, <strong>EPFL</strong>, and <strong>TU München</strong>.
+        </p>
+    </section>
+
+    <!-- Educational History -->
+    <section>
+        <h2 class="section-title">Educational Timeline</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Comenius-Gymnasium Düsseldorf</span>
+                <span>Aug. 2026 – May 2028 (Expected)</span>
+            </div>
+            <div class="entry-sub">
+                <span>Abitur Candidate (Upper Secondary Education)</span>
+                <span>Düsseldorf, Germany</span>
+            </div>
+            <p class="entry-desc">Focusing on advanced mathematics, natural sciences, and analytical writing tracks.</p>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Pocklington School</span>
+                <span>Aug. 2025 – June 2026</span>
+            </div>
+            <div class="entry-sub">
+                <span>GCSE Qualifications & Academic Exchange</span>
+                <span>Yorkshire, UK</span>
+            </div>
+            <p class="entry-desc">Curriculum emphasizing analytical thinking, physics, mathematics, and computer science in an English-speaking environment.</p>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Heinrich-Heine-Universität Düsseldorf</span>
+                <span>Sept. 2024 – March 2025</span>
+            </div>
+            <div class="entry-sub">
+                <span>Schülerstudium (Early University Studies)</span>
+                <span>Düsseldorf, Germany</span>
+            </div>
+            <p class="entry-desc">Attended university lectures and conducted coursework in Medical Physics and Experimental Mechanics.</p>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Comenius-Gymnasium Düsseldorf</span>
+                <span>2018 – July 2025</span>
+            </div>
+            <div class="entry-sub">
+                <span>ZP10 Abschluss (Secondary Education Qualification)</span>
+                <span>Düsseldorf, Germany</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses & Certifications -->
+    <section>
+        <h2 class="section-title">Advanced Certifications & Coursework</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Space Mission Design and Operations</span>
+                <span>Issued Oct. 2026</span>
+            </div>
+            <div class="entry-sub">
+                <span>EPFL (École Polytechnique Fédérale de Lausanne) &bull; edX Verified</span>
+                <span>Credential ID: 69310ea121934419a1554bffe41eec6a</span>
+            </div>
+            <p class="entry-desc">Covered orbital mechanics, launch dynamics, propulsion systems, spacecraft subsystems, and mission trade-off analysis.</p>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>CS50x: Introduction to Computer Science</span>
+                <span>Issued May 2026</span>
+            </div>
+            <div class="entry-sub">
+                <span>Harvard University</span>
+                <span>Credential ID: 433365b7-e595-4dfa-8bb4-b5b364f66201</span>
+            </div>
+            <p class="entry-desc">Mastered fundamental computer science concepts, memory management (C), data structures, algorithms, SQL, and web development.</p>
+        </div>
+    </section>
+
+    <!-- Engineering & Research Projects -->
+    <section>
+        <h2 class="section-title">Technical Projects & Research</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Multi-Axis Robotic Arm Build</span>
+                <span>In Progress</span>
+            </div>
+            <p class="entry-desc">Developing a physical robotic arm utilizing Raspberry Pi microcomputers and Arduino microcontrollers for motor actuation and sensor control.</p>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Automated Portfolio Infrastructure</span>
+                <span>2026</span>
+            </div>
+            <p class="entry-desc">Engineered a multi-page web presence utilizing pure HTML, Tailwind CSS, Git version control, and Vercel edge deployment.</p>
+        </div>
+    </section>
+
+    <!-- Publications & Humanities -->
+    <section>
+        <h2 class="section-title">Publications & Humanities Research</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Co-Author — "Die Unglaubliche Geschichte von Rosa Willinger"</span>
+                <span>Published June 18, 2025</span>
+            </div>
+            <div class="entry-sub">
+                <span>Edition Virgines &bull; ISBN / Historical Research Project</span>
+            </div>
+            <p class="entry-desc">Co-authored a published historical book examining local Jewish history in the Rhineland, participating in the Geschichtswettbewerb des Bundespräsidenten (Körber-Stiftung) with primary archival evaluation.</p>
+        </div>
+    </section>
+
+    <!-- Languages & Core Skills -->
+    <section>
+        <h2 class="section-title">Skills & Languages</h2>
+        <div class="skills-grid">
+            <span class="skills-label">Languages:</span>
+            <span>German (Native), English (Fluent), French (Basic)</span>
+
+            <span class="skills-label">Technical / STEM:</span>
+            <span>Orbital Mechanics, Computational Mechanics, Python, C, SQL, HTML/Tailwind, Microcontrollers (Raspberry Pi, Arduino)</span>
+
+            <span class="skills-label">Research:</span>
+            <span>Source-Critical Analysis, Archival Investigation, Scientific Writing</span>
+        </div>
+    </section>
+
+</body>
+</html>
