@@ -28,6 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
             <i class="fas fa-circle-info text-[10px] mr-1"></i>
             Information on this personal portfolio is updated periodically and provided for reference. For official academic records, please reach out directly.
         </p>
+        <div class="flex items-center justify-between pt-2 border-t border-borderSubtle/60">
+            <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-git-alt text-red-400 mr-1"></i>Git</span>
+                <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-cloud text-accentBlue mr-1"></i>Vercel</span>
+            </div>
+            <a href="https://github.com/henri20HUB" target="_blank" class="text-xs text-accentBlue hover:text-blue-400 transition-colors inline-flex items-center gap-1 font-medium">
+                Repository <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+        </div>
     </footer>
     `;
 
