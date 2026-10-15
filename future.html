@@ -6,6 +6,7 @@
     <title>Future Aspirations — Henri Withöft</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="components.js" defer></script>
     <script>
         tailwind.config = {
             theme: {
@@ -24,18 +25,7 @@
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between">
 
-    <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-xl sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="index.html" class="font-bold text-lg tracking-tight hover:text-accentBlue transition-colors">Henri Withöft</a>
-            <nav class="flex items-center gap-6 text-sm font-medium text-slate-400">
-                <a href="index.html" class="hover:text-slate-100 transition-colors">Home</a>
-                <a href="projects.html" class="hover:text-slate-100 transition-colors">Projects</a>
-                <a href="experience.html" class="hover:text-slate-100 transition-colors">Experience</a>
-                <a href="future.html" class="text-white font-semibold">Future</a>
-                <a href="contact.html" class="hover:text-slate-100 transition-colors">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <div id="navbar"></div>
 
     <main class="max-w-4xl mx-auto px-6 py-16 flex-grow">
         <div class="space-y-4 mb-12">
@@ -92,9 +82,7 @@
         </div>
     </main>
 
-    <footer class="border-t border-borderSubtle py-8 text-center text-xs text-slate-500">
-        <p>&copy; 2026 Henri Withöft.</p>
-    </footer>
+    <div id="footer"></div>
 
 </body>
 </html>
