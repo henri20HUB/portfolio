@@ -1,7 +1,30 @@
-// Shared Header and Footer Components
+// Shared Header, Footer, and i18n Language Selector
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 1. Reusable Navigation Bar
+    // Translation Data for Shared Components
+    const translations = {
+        en: {
+            navHome: "Home",
+            navProjects: "Projects",
+            navExperience: "Experience",
+            navFuture: "Future",
+            navContact: "Contact",
+            disclaimerText: "Information on this personal portfolio is updated periodically and provided for reference. For official academic records, please reach out directly."
+        },
+        de: {
+            navHome: "Startseite",
+            navProjects: "Projekte",
+            navExperience: "Erfahrung",
+            navFuture: "Zukunft",
+            navContact: "Kontakt",
+            disclaimerText: "Informationen auf diesem persönlichen Portfolio werden regelmäßig aktualisiert und dienen der Orientierung. Für offizielle akademische Nachweise bitten wir um direkte Kontaktaufnahme."
+        }
+    };
+
+    // Get current stored language preference (default: 'en')
+    let currentLang = localStorage.getItem("portfolio_lang") || "en";
+
+    // Reusable Navigation Bar HTML
     const headerHTML = `
     <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-xl sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -9,41 +32,74 @@ document.addEventListener("DOMContentLoaded", () => {
                 <span class="w-2.5 h-2.5 rounded-full bg-accentBlue animate-ping"></span>
                 Henri Withöft
             </a>
-            <nav class="flex items-center gap-6 text-sm font-medium text-slate-400">
-                <a href="index.html" class="hover:text-slate-100 transition-colors">Home</a>
-                <a href="projects.html" class="hover:text-slate-100 transition-colors">Projects</a>
-                <a href="experience.html" class="hover:text-slate-100 transition-colors">Experience</a>
-                <a href="future.html" class="hover:text-slate-100 transition-colors">Future</a>
-                <a href="contact.html" class="hover:text-slate-100 transition-colors">Contact</a>
-            </nav>
+            <div class="flex items-center gap-6">
+                <nav class="flex items-center gap-5 text-sm font-medium text-slate-400">
+                    <a href="index.html" data-i18n="navHome" class="hover:text-slate-100 transition-colors">${translations[currentLang].navHome}</a>
+                    <a href="projects.html" data-i18n="navProjects" class="hover:text-slate-100 transition-colors">${translations[currentLang].navProjects}</a>
+                    <a href="experience.html" data-i18n="navExperience" class="hover:text-slate-100 transition-colors">${translations[currentLang].navExperience}</a>
+                    <a href="future.html" data-i18n="navFuture" class="hover:text-slate-100 transition-colors">${translations[currentLang].navFuture}</a>
+                    <a href="contact.html" data-i18n="navContact" class="hover:text-slate-100 transition-colors">${translations[currentLang].navContact}</a>
+                </nav>
+                
+                <!-- Language Toggle Button -->
+                <button id="lang-toggle" class="text-xs font-mono font-medium px-2.5 py-1 rounded-md bg-cardBg border border-borderSubtle text-slate-300 hover:border-accentBlue/50 transition-all flex items-center gap-1">
+                    <span id="lang-en" class="${currentLang === 'en' ? 'text-accentBlue font-bold' : 'text-slate-500'}">EN</span>
+                    <span class="text-slate-600">|</span>
+                    <span id="lang-de" class="${currentLang === 'de' ? 'text-accentBlue font-bold' : 'text-slate-500'}">DE</span>
+                </button>
+            </div>
         </div>
     </header>
     `;
 
-    // 2. Reusable Footer with Disclaimer
+    // Reusable Footer HTML
     const footerHTML = `
     <footer class="border-t border-borderSubtle py-8 text-center text-xs text-slate-500 space-y-2 relative z-10">
         <p>&copy; 2026 Henri Withöft.</p>
-        <p class="text-[11px] text-slate-600 max-w-md mx-auto px-4 leading-normal">
+        <p class="text-[11px] text-slate-600 max-w-md mx-auto px-4 leading-normal" data-i18n="disclaimerText">
             <i class="fas fa-circle-info text-[10px] mr-1"></i>
-            Information on this personal portfolio is updated periodically and provided for reference. For official academic records, please reach out directly.
+            ${translations[currentLang].disclaimerText}
         </p>
-        <div class="flex items-center justify-between pt-2 border-t border-borderSubtle/60">
-            <div class="flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-git-alt text-red-400 mr-1"></i>Git</span>
-                <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-cloud text-accentBlue mr-1"></i>Vercel</span>
-            </div>
-            <a href="https://github.com/henri20HUB" target="_blank" class="text-xs text-accentBlue hover:text-blue-400 transition-colors inline-flex items-center gap-1 font-medium">
-                Repository <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-            </a>
-        </div>
     </footer>
     `;
 
-    // Inject into placeholders
+    // Inject Navigation and Footer
     const navElement = document.getElementById("navbar");
     const footerElement = document.getElementById("footer");
 
     if (navElement) navElement.innerHTML = headerHTML;
     if (footerElement) footerElement.innerHTML = footerHTML;
+
+    // Toggle Button Event Handler
+    const toggleBtn = document.getElementById("lang-toggle");
+    if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+            currentLang = currentLang === "en" ? "de" : "en";
+            localStorage.setItem("portfolio_lang", currentLang);
+            
+            // Re-render UI with new language
+            applyLanguage(currentLang);
+        });
+    }
+
+    function applyLanguage(lang) {
+        // Update Nav Active States
+        document.getElementById("lang-en").className = lang === 'en' ? 'text-accentBlue font-bold' : 'text-slate-500';
+        document.getElementById("lang-de").className = lang === 'de' ? 'text-accentBlue font-bold' : 'text-slate-500';
+
+        // Update elements with data-i18n attributes
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+            const key = el.getAttribute("data-i18n");
+            if (translations[lang] && translations[lang][key]) {
+                if (key === "disclaimerText") {
+                    el.innerHTML = `<i class="fas fa-circle-info text-[10px] mr-1"></i> ${translations[lang][key]}`;
+                } else {
+                    el.textContent = translations[lang][key];
+                }
+            }
+        });
+
+        // Trigger custom event so page-specific content can translate if needed
+        window.dispatchEvent(new CustomEvent("languageChanged", { detail: { lang } }));
+    }
 });
