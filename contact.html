@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth lang-en-active">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Henri Withöft</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html.lang-en-active .lang-de { display: none !important; }
+        html.lang-de-active .lang-en { display: none !important; }
+    </style>
     <script src="components.js" defer></script>
     <script>
         tailwind.config = {
@@ -22,13 +26,6 @@
             }
         }
     </script>
-    <!-- OpenGraph / LinkedIn Preview Tags -->
-    <meta property="og:title" content="Henri Withöft — Portfolio" />
-    <meta property="og:description" content="Abitur Scholar, Physics & Aerospace Engineering Aspirant (targeting ETH Zürich, EPFL, TU München)." />
-    <meta property="og:type" content="website" />
-
-    <!-- Browser Tab Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between">
 
@@ -39,8 +36,14 @@
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
                 <i class="fas fa-paper-plane"></i> /contact
             </div>
-            <h1 class="text-3xl font-bold tracking-tight text-white">Get in Touch & Credentials</h1>
-            <p class="text-slate-400 text-sm max-w-xl">Direct contacts and academic CV download for admissions or inquiries.</p>
+            <h1 class="text-3xl font-bold tracking-tight text-white">
+                <span class="lang-en">Get in Touch & Credentials</span>
+                <span class="lang-de">Kontakt & Unterlagen</span>
+            </h1>
+            <p class="text-slate-400 text-sm max-w-xl">
+                <span class="lang-en">Direct contacts and academic CV download for admissions or inquiries.</span>
+                <span class="lang-de">Direkte Kontaktdaten und akademischer Lebenslauf zum Download.</span>
+            </p>
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2 max-w-2xl">
@@ -52,7 +55,10 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div>
-                            <p class="text-xs text-slate-400 font-medium tracking-wider uppercase">Direct Email</p>
+                            <p class="text-xs text-slate-400 font-medium tracking-wider uppercase">
+                                <span class="lang-en">Direct Email</span>
+                                <span class="lang-de">E-Mail Adresse</span>
+                            </p>
                             <a href="mailto:Henri.withoeft@gmail.com" class="text-sm font-semibold text-white hover:text-accentBlue transition-colors break-all">
                                 Henri.withoeft@gmail.com
                             </a>
@@ -76,13 +82,20 @@
                     <div class="w-12 h-12 rounded-xl bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue text-lg">
                         <i class="fas fa-file-pdf"></i>
                     </div>
-                    <h2 class="text-lg font-semibold text-white">Academic CV</h2>
+                    <h2 class="text-lg font-semibold text-white">
+                        <span class="lang-en">Academic CV</span>
+                        <span class="lang-de">Akademischer Lebenslauf</span>
+                    </h2>
                     <p class="text-xs text-slate-400 leading-relaxed">
-                        Formal 1-page overview of educational history, certifications, published research, and technical background.
+                        <span class="lang-en">Formal 1-page overview of educational history, certifications, published research, and technical background.</span>
+                        <span class="lang-de">1-seitige Übersicht zu Bildungsweg, Zertifikaten, Publikationen und technischem Hintergrund.</span>
                     </p>
                 </div>
+
                 <a href="assets/Henri_Withoft_CV.pdf" download target="_blank" class="w-full py-3 px-4 rounded-xl bg-accentBlue hover:bg-blue-600 text-white text-xs font-semibold tracking-wide flex items-center justify-center gap-2 transition-all shadow-lg shadow-accentBlue/20">
-                    <i class="fas fa-download"></i> Download PDF CV
+                    <i class="fas fa-download"></i> 
+                    <span class="lang-en">Download PDF CV</span>
+                    <span class="lang-de">Lebenslauf als PDF herunterladen</span>
                 </a>
             </div>
         </div>

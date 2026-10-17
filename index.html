@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth lang-en-active">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henri Withöft — Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html.lang-en-active .lang-de { display: none !important; }
+        html.lang-de-active .lang-en { display: none !important; }
+    </style>
     <script src="components.js" defer></script>
     <script>
         tailwind.config = {
@@ -22,27 +26,24 @@
             }
         }
     </script>
-    <!-- OpenGraph / LinkedIn Preview Tags -->
     <meta property="og:title" content="Henri Withöft — Portfolio" />
-    <meta property="og:description" content="Abitur Scholar, Physics & Aerospace Engineering Aspirant (targeting ETH Zürich, EPFL, TU München)." />
+    <meta property="og:description" content="Abitur Scholar, Physics & Aerospace Engineering Aspirant (ETH Zürich, EPFL, TU München)." />
     <meta property="og:type" content="website" />
-
-    <!-- Browser Tab Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between relative overflow-x-hidden">
 
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-accentBlue/10 blur-[120px] pointer-events-none rounded-full"></div>
 
-    <!-- Reusable Navbar -->
     <div id="navbar"></div>
 
-    <!-- Main Content -->
     <main class="max-w-4xl mx-auto px-6 py-20 flex-grow relative z-10">
         <section class="space-y-8">
             <div class="flex flex-wrap gap-3">
                 <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accentBlue/30 bg-accentBlue/10 text-accentBlue text-xs font-semibold tracking-wide backdrop-blur-sm">
-                    <i class="fas fa-user-graduate text-xs"></i> Abitur Candidate & Scholar
+                    <i class="fas fa-user-graduate text-xs"></i> 
+                    <span class="lang-en">Abitur Candidate & Scholar</span>
+                    <span class="lang-de">Abiturient & Stipendiat</span>
                 </span>
                 <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accentPurple/30 bg-accentPurple/10 text-accentPurple text-xs font-semibold tracking-wide backdrop-blur-sm">
                     <i class="fas fa-rocket text-xs"></i> EPFL Space Mission Design
@@ -50,26 +51,30 @@
             </div>
 
             <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-                Abitur Scholar, Physics & Aerospace Engineering Aspirant.
+                <span class="lang-en">Abitur Scholar, Physics & Aerospace Engineering Aspirant.</span>
+                <span class="lang-de">Abiturient, Physik & Luft- und Raumfahrttechnik Aspirant.</span>
             </h1>
 
             <p class="text-lg text-slate-400 leading-relaxed max-w-2xl">
-                Preparing for university studies in Physics and Aerospace Engineering (targeting ETH Zürich, EPFL, and TU München). Focused on fundamental physical principles, space systems, and independent academic research.
+                <span class="lang-en">Preparing for university studies in Physics and Aerospace Engineering (targeting ETH Zürich, EPFL, and TU München). Focused on fundamental physical principles, space systems, and independent academic research.</span>
+                <span class="lang-de">Vorbereitung auf das Universitätsstudium der Physik sowie Luft- und Raumfahrttechnik (Zieluniversitäten: ETH Zürich, EPFL und TU München). Fokus auf physikalischen Grundlagen, Raumfahrtsystemen und wissenschaftlicher Forschung.</span>
             </p>
 
             <div class="flex flex-wrap items-center gap-4 pt-4">
                 <a href="projects.html" class="px-6 py-3 rounded-xl bg-accentBlue hover:bg-blue-600 text-white font-medium text-sm transition-all shadow-lg shadow-accentBlue/25 flex items-center gap-2">
-                    <i class="fas fa-code"></i> Technical Projects &rarr;
+                    <i class="fas fa-code"></i> 
+                    <span class="lang-en">Technical Projects &rarr;</span>
+                    <span class="lang-de">Technische Projekte &rarr;</span>
                 </a>
-            <a href="assets/Henri_Withoft_CV.pdf" download target="_blank" class="px-6 py-3 rounded-xl border border-borderSubtle hover:border-slate-500 bg-cardBg/60 backdrop-blur-md text-slate-300 hover:text-white font-medium text-sm transition-all flex items-center gap-2">
-                <i class="fas fa-file-arrow-down text-accentBlue"></i> Download CV (PDF)
-            </a>
-
+                <a href="assets/Henri_Withoft_CV.pdf" download target="_blank" class="px-6 py-3 rounded-xl border border-borderSubtle hover:border-slate-500 bg-cardBg/60 backdrop-blur-md text-slate-300 hover:text-white font-medium text-sm transition-all flex items-center gap-2">
+                    <i class="fas fa-file-arrow-down text-accentBlue"></i> 
+                    <span class="lang-en">Download CV (PDF)</span>
+                    <span class="lang-de">Lebenslauf herunterladen (PDF)</span>
+                </a>
             </div>
         </section>
     </main>
 
-    <!-- Reusable Footer -->
     <div id="footer"></div>
 
 </body>

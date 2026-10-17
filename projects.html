@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth lang-en-active">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects — Henri Withöft</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html.lang-en-active .lang-de { display: none !important; }
+        html.lang-de-active .lang-en { display: none !important; }
+    </style>
     <script src="components.js" defer></script>
     <script>
         tailwind.config = {
@@ -39,7 +43,10 @@
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
                     <i class="fas fa-terminal"></i> /technical-builds
                 </div>
-                <h1 class="text-3xl font-bold tracking-tight text-white">Technical Builds & Engineering</h1>
+                <h1 class="text-3xl font-bold tracking-tight text-white">
+                    <span class="lang-en">Technical Builds & Engineering</span>
+                    <span class="lang-de">Technische Entwicklungen & Ingenieurwesen</span>
+                </h1>
             </div>
 
             <div class="grid gap-6 sm:grid-cols-2">
@@ -47,11 +54,18 @@
                 <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentBlue/50 transition-all">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <h2 class="font-semibold text-white text-base">Robotic Arm Project</h2>
-                            <span class="text-xs font-mono text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded">In Progress</span>
+                            <h2 class="font-semibold text-white text-base">
+                                <span class="lang-en">Robotic Arm Project</span>
+                                <span class="lang-de">Roboterarm-Projekt</span>
+                            </h2>
+                            <span class="text-xs font-mono text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded">
+                                <span class="lang-en">In Progress</span>
+                                <span class="lang-de">In Bearbeitung</span>
+                            </span>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed">
-                            Experimenting with Raspberry Pi microcomputers and Arduino microcontrollers to construct and program a multi-axis robotic arm.
+                            <span class="lang-en">Experimenting with Raspberry Pi microcomputers and Arduino microcontrollers to construct and program a multi-axis robotic arm.</span>
+                            <span class="lang-de">Konstruktion und Programmierung eines mehrachsigen Roboterarms mittels Raspberry Pi Mikrocomputern und Arduino Mikrocontrollern.</span>
                         </p>
                     </div>
                     <div class="pt-3 border-t border-borderSubtle/60 flex items-center justify-between text-xs">
@@ -69,13 +83,17 @@
                 <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentBlue/50 transition-all">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <h2 class="font-semibold text-white text-base">Portfolio Infrastructure</h2>
+                            <h2 class="font-semibold text-white text-base">
+                                <span class="lang-en">Portfolio Infrastructure</span>
+                                <span class="lang-de">Portfolio-Infrastruktur</span>
+                            </h2>
                             <div class="w-8 h-8 rounded-lg bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue">
                                 <i class="fas fa-code-branch text-xs"></i>
                             </div>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed">
-                            Custom multi-page portfolio built with HTML and Tailwind CSS, integrated with Git version control and Vercel edge deployment.
+                            <span class="lang-en">Custom multi-page portfolio built with HTML and Tailwind CSS, integrated with Git version control and Vercel edge deployment.</span>
+                            <span class="lang-de">Mehrseitiges Portfolio entwickelt mit HTML und Tailwind CSS, angebunden an Git-Versionskontrolle und Vercel Deployment.</span>
                         </p>
                     </div>
                     <div class="pt-3 border-t border-borderSubtle/60 flex items-center justify-between text-xs">
@@ -84,23 +102,32 @@
                             <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-cloud text-accentBlue mr-1"></i>Vercel</span>
                         </div>
                         <a href="https://github.com/henri20HUB" target="_blank" class="text-accentBlue hover:text-blue-400 transition-colors inline-flex items-center gap-1 font-medium">
-                            Repository <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                            <span class="lang-en">Repository</span>
+                            <span class="lang-de">Repository</span>
+                            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Dedicated GitHub Web Infrastructures Slot -->
+            <!-- GitHub Infrastructures Overview -->
             <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-4">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     <div class="space-y-1">
                         <h3 class="font-semibold text-white text-base flex items-center gap-2">
-                            <i class="fab fa-github text-slate-200"></i> GitHub Web Infrastructures & Repositories
+                            <i class="fab fa-github text-slate-200"></i> 
+                            <span class="lang-en">GitHub Web Infrastructures & Repositories</span>
+                            <span class="lang-de">GitHub Web-Infrastrukturen & Repositories</span>
                         </h3>
-                        <p class="text-xs text-slate-400">Overview of multiple static sites and web deployments built for different use cases.</p>
+                        <p class="text-xs text-slate-400">
+                            <span class="lang-en">Overview of multiple static sites and web deployments built for different use cases.</span>
+                            <span class="lang-de">Übersicht mehrerer Web-Projekte und Deployments für verschiedene Verwendungszwecke.</span>
+                        </p>
                     </div>
                     <a href="https://github.com/henri20HUB?tab=repositories" target="_blank" class="px-4 py-2 rounded-xl bg-accentBlue/10 hover:bg-accentBlue/20 border border-accentBlue/30 text-accentBlue text-xs font-semibold tracking-wide transition-all inline-flex items-center gap-2">
-                        View All Repositories <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                        <span class="lang-en">View All Repositories</span>
+                        <span class="lang-de">Alle Repositories anzeigen</span>
+                        <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
                     </a>
                 </div>
             </div>
@@ -112,7 +139,10 @@
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentPurple/10 border border-accentPurple/20 text-accentPurple text-xs font-mono">
                     <i class="fas fa-laptop-code"></i> /courses-and-certifications
                 </div>
-                <h2 class="text-2xl font-bold tracking-tight text-white">Courses & Certifications</h2>
+                <h2 class="text-2xl font-bold tracking-tight text-white">
+                    <span class="lang-en">Courses & Certifications</span>
+                    <span class="lang-de">Kurse & Zertifikate</span>
+                </h2>
             </div>
 
             <div class="grid gap-6 sm:grid-cols-2">
@@ -121,16 +151,22 @@
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
                             <h3 class="font-semibold text-white text-base">Harvard CS50x</h3>
-                            <span class="text-xs font-mono text-slate-400">Issued May 2026</span>
+                            <span class="text-xs font-mono text-slate-400">
+                                <span class="lang-en">Issued May 2026</span>
+                                <span class="lang-de">Ausgestellt Mai 2026</span>
+                            </span>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed">
-                            Introduction to Computer Science from Harvard University, covering algorithms, memory management, SQL, and programming fundamentals.
+                            <span class="lang-en">Introduction to Computer Science from Harvard University, covering algorithms, memory management, SQL, and programming fundamentals.</span>
+                            <span class="lang-de">Einführung in die Informatik der Harvard University mit Fokus auf Algorithmen, Speicherverwaltung, SQL und Programmiergrundlagen.</span>
                         </p>
                     </div>
                     <div class="pt-3 border-t border-borderSubtle/60 flex items-center justify-between text-xs text-slate-400">
                         <span class="font-mono text-[11px] text-slate-500">ID: 433365b7-e595-4dfa-8bb4-b5b364f66201</span>
                         <a href="assets/CS50x_Certificate.pdf" target="_blank" class="text-accentBlue hover:text-blue-400 transition-colors inline-flex items-center gap-1 font-medium">
-                            Verify <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                            <span class="lang-en">Verify</span>
+                            <span class="lang-de">Verifizieren</span>
+                            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
                         </a>
                     </div>
                 </div>
@@ -140,16 +176,22 @@
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
                             <h3 class="font-semibold text-white text-base">EPFL Space Mission Design</h3>
-                            <span class="text-xs font-mono text-slate-400">Issued Oct. 2026</span>
+                            <span class="text-xs font-mono text-slate-400">
+                                <span class="lang-en">Issued Oct. 2026</span>
+                                <span class="lang-de">Ausgestellt Okt. 2026</span>
+                            </span>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed">
-                            edX verified certificate covering orbital mechanics, spacecraft subsystems, propulsion, and mission planning frameworks.
+                            <span class="lang-en">edX verified certificate covering orbital mechanics, spacecraft subsystems, propulsion, and mission planning frameworks.</span>
+                            <span class="lang-de">Zertifikat über Orbitalmechanik, Raumfahrzeug-Subsysteme, Antriebssysteme und Missionsplanung der EPFL.</span>
                         </p>
                     </div>
                     <div class="pt-3 border-t border-borderSubtle/60 flex items-center justify-between text-xs text-slate-400">
                         <span class="font-mono text-[11px] text-slate-500">ID: 69310ea121934419a1554bffe41eec6a</span>
                         <a href="assets/EPFL_Space_Mission_Design_Certificate.pdf" target="_blank" class="text-accentBlue hover:text-blue-400 transition-colors inline-flex items-center gap-1 font-medium">
-                            Verify <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                            <span class="lang-en">Verify</span>
+                            <span class="lang-de">Verifizieren</span>
+                            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
                         </a>
                     </div>
                 </div>

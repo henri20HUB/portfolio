@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth lang-en-active">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Aspirations — Henri Withöft</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html.lang-en-active .lang-de { display: none !important; }
+        html.lang-de-active .lang-en { display: none !important; }
+    </style>
     <script src="components.js" defer></script>
     <script>
         tailwind.config = {
@@ -22,13 +26,6 @@
             }
         }
     </script>
-    <!-- OpenGraph / LinkedIn Preview Tags -->
-    <meta property="og:title" content="Henri Withöft — Portfolio" />
-    <meta property="og:description" content="Abitur Scholar, Physics & Aerospace Engineering Aspirant (targeting ETH Zürich, EPFL, TU München)." />
-    <meta property="og:type" content="website" />
-
-    <!-- Browser Tab Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between">
 
@@ -39,8 +36,14 @@
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
                 <i class="fas fa-compass"></i> /university-roadmap
             </div>
-            <h1 class="text-3xl font-bold tracking-tight text-white">Target Degrees & Universities</h1>
-            <p class="text-slate-400 text-sm max-w-xl">Intended academic paths in fundamental physics and specialized engineering.</p>
+            <h1 class="text-3xl font-bold tracking-tight text-white">
+                <span class="lang-en">Target Degrees & Universities</span>
+                <span class="lang-de">Zielstudiengänge & Universitäten</span>
+            </h1>
+            <p class="text-slate-400 text-sm max-w-xl">
+                <span class="lang-en">Intended academic paths in fundamental physics and specialized engineering.</span>
+                <span class="lang-de">Geplante akademische Laufbahnen in der Physik und ingenieurwissenschaftlichen Disziplinen.</span>
+            </p>
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2">
@@ -49,9 +52,13 @@
                 <div class="w-10 h-10 rounded-xl bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue">
                     <i class="fas fa-atom text-base"></i>
                 </div>
-                <h2 class="font-semibold text-white text-base">Primary Focus: Physics</h2>
+                <h2 class="font-semibold text-white text-base">
+                    <span class="lang-en">Primary Focus: Physics</span>
+                    <span class="lang-de">Hauptfokus: Physik</span>
+                </h2>
                 <p class="text-sm text-slate-400 leading-relaxed">
-                    Aiming for a degree in Physics to build an unshakeable foundation in mechanics, thermodynamics, electromagnetism, and mathematical modeling.
+                    <span class="lang-en">Aiming for a degree in Physics to build an unshakeable foundation in mechanics, thermodynamics, electromagnetism, and mathematical modeling.</span>
+                    <span class="lang-de">Angestrebter Bachelor-Abschluss in Physik zur Erlangung fundierter Kenntnisse in Mechanik, Thermodynamik, Elektrodynamik und mathematischer Modellierung.</span>
                 </p>
             </div>
 
@@ -60,9 +67,13 @@
                 <div class="w-10 h-10 rounded-xl bg-accentPurple/10 border border-accentPurple/20 flex items-center justify-center text-accentPurple">
                     <i class="fas fa-rocket text-base"></i>
                 </div>
-                <h2 class="font-semibold text-white text-base">Aerospace & Electrical Engineering</h2>
+                <h2 class="font-semibold text-white text-base">
+                    <span class="lang-en">Aerospace & Electrical Engineering</span>
+                    <span class="lang-de">Luft- und Raumfahrttechnik / Elektrotechnik</span>
+                </h2>
                 <p class="text-sm text-slate-400 leading-relaxed">
-                    Secondary interest in Aerospace or Electrical Engineering to apply physics directly to flight dynamics, hardware, and propulsion.
+                    <span class="lang-en">Secondary interest in Aerospace or Electrical Engineering to apply physics directly to flight dynamics, hardware, and propulsion.</span>
+                    <span class="lang-de">Interesse an Luft- und Raumfahrttechnik sowie Elektrotechnik zur direkten Anwendung physikalischer Prinzipien auf Flugdynamik und Systeme.</span>
                 </p>
             </div>
         </div>
@@ -70,12 +81,17 @@
         <!-- Target Institutions -->
         <div class="mt-10 p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-4">
             <h3 class="text-lg font-semibold text-white flex items-center gap-2">
-                <i class="fas fa-university text-emerald-400"></i> Target Institutions
+                <i class="fas fa-university text-emerald-400"></i> 
+                <span class="lang-en">Target Institutions</span>
+                <span class="lang-de">Zieluniversitäten</span>
             </h3>
             <div class="grid gap-3 sm:grid-cols-3">
                 <div class="p-4 rounded-xl bg-darkBg border border-borderSubtle text-center">
                     <span class="font-semibold text-white text-sm block">ETH Zürich</span>
-                    <span class="text-xs text-slate-500">Switzerland</span>
+                    <span class="text-xs text-slate-500">
+                        <span class="lang-en">Switzerland</span>
+                        <span class="lang-de">Schweiz</span>
+                    </span>
                 </div>
                 <div class="p-4 rounded-xl bg-darkBg border border-borderSubtle text-center">
                     <span class="font-semibold text-white text-sm block">EPFL</span>
@@ -83,7 +99,10 @@
                 </div>
                 <div class="p-4 rounded-xl bg-darkBg border border-borderSubtle text-center">
                     <span class="font-semibold text-white text-sm block">TU München</span>
-                    <span class="text-xs text-slate-500">Germany</span>
+                    <span class="text-xs text-slate-500">
+                        <span class="lang-en">Germany</span>
+                        <span class="lang-de">Deutschland</span>
+                    </span>
                 </div>
             </div>
         </div>
