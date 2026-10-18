@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.classList.remove("lang-en-active", "lang-de-active");
     document.documentElement.classList.add(`lang-${currentLang}-active`);
 
-    // Shared Header
+    // Shared Header (New Nav Order: Home -> Experience -> Projects -> Future -> Contact)
     const headerHTML = `
     <header class="border-b border-borderSubtle bg-darkBg/85 backdrop-blur-xl sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span class="lang-en">Home</span>
                         <span class="lang-de">Startseite</span>
                     </a>
-                    <a href="projects.html" class="hover:text-slate-100 transition-colors">
-                        <span class="lang-en">Projects</span>
-                        <span class="lang-de">Projekte</span>
-                    </a>
                     <a href="experience.html" class="hover:text-slate-100 transition-colors">
                         <span class="lang-en">Experience</span>
                         <span class="lang-de">Erfahrung</span>
+                    </a>
+                    <a href="projects.html" class="hover:text-slate-100 transition-colors">
+                        <span class="lang-en">Projects</span>
+                        <span class="lang-de">Projekte</span>
                     </a>
                     <a href="future.html" class="hover:text-slate-100 transition-colors">
                         <span class="lang-en">Future</span>
