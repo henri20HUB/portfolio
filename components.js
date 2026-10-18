@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Shared Header
     const headerHTML = `
-    <header class="border-b border-borderSubtle bg-darkBg/80 backdrop-blur-xl sticky top-0 z-50">
+    <header class="border-b border-borderSubtle bg-darkBg/85 backdrop-blur-xl sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="index.html" class="font-bold text-lg tracking-tight hover:text-accentBlue transition-colors flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-accentBlue animate-ping"></span>
@@ -40,11 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     </a>
                 </nav>
                 
-                <!-- Toggle Button -->
-                <button id="lang-toggle" class="text-xs font-mono font-medium px-2.5 py-1 rounded-md bg-cardBg border border-borderSubtle text-slate-300 hover:border-accentBlue/50 transition-all flex items-center gap-1 cursor-pointer">
+                <!-- Toggle Button with Keyboard Hint -->
+                <button id="lang-toggle" title="Press Shift + L to toggle language" class="text-xs font-mono font-medium px-2.5 py-1 rounded-md bg-cardBg border border-borderSubtle text-slate-300 hover:border-accentBlue/50 transition-all flex items-center gap-1.5 cursor-pointer group">
                     <span id="btn-lang-en" class="${currentLang === 'en' ? 'text-accentBlue font-bold' : 'text-slate-500'}">EN</span>
                     <span class="text-slate-600">|</span>
                     <span id="btn-lang-de" class="${currentLang === 'de' ? 'text-accentBlue font-bold' : 'text-slate-500'}">DE</span>
+                    <kbd class="hidden sm:inline-block text-[9px] px-1 py-0.2 rounded bg-darkBg border border-borderSubtle text-slate-500 group-hover:text-slate-300 transition-colors ml-1">⇧L</kbd>
                 </button>
             </div>
         </div>
@@ -84,5 +85,13 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("btn-lang-en").className = currentLang === 'en' ? 'text-accentBlue font-bold' : 'text-slate-500';
             document.getElementById("btn-lang-de").className = currentLang === 'de' ? 'text-accentBlue font-bold' : 'text-slate-500';
         });
+    }
+});
+
+// Keyboard Shortcut Listener: Shift + L to toggle language anywhere on the site
+document.addEventListener("keydown", (e) => {
+    if (e.shiftKey && e.key.toLowerCase() === "l") {
+        const toggleBtn = document.getElementById("lang-toggle");
+        if (toggleBtn) toggleBtn.click();
     }
 });
