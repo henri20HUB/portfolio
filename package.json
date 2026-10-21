@@ -1,0 +1,28 @@
+{
+  "name": "henri-portfolio",
+  "version": "1.0.0",
+  "description": "Henri Withöft's personal portfolio website with Vercel Web Analytics",
+  "main": "components.js",
+  "scripts": {
+    "dev": "npx http-server -p 3000",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henri20HUB/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "analytics",
+    "vercel"
+  ],
+  "author": "Henri Withöft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henri20HUB/portfolio/issues"
+  },
+  "homepage": "https://github.com/henri20HUB/portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
