@@ -40,203 +40,33 @@
         <!-- SECTION 1: Technical Builds -->
         <div class="space-y-6">
             <div class="space-y-2">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/25 text-accentBlue text-xs font-mono backdrop-blur-md">
                     <i class="fas fa-terminal"></i> /technical-builds
                 </div>
-                <h1 class="text-3xl font-bold tracking-tight text-white">
+                <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
                     <span class="lang-en">Technical Builds & Engineering</span>
                     <span class="lang-de">Technische Entwicklungen & Ingenieurwesen</span>
                 </h1>
             </div>
 
-            <!-- Engineering & Hardware Stack Box -->
-            <div class="p-4 rounded-xl bg-cardBg/60 border border-borderSubtle space-y-2">
+            <!-- Engineering & Hardware Stack Box (Liquid Glass Styling) -->
+            <div class="p-4 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/10 space-y-2.5 shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)]">
                 <div class="flex items-center justify-between">
-                    <span class="text-xs font-mono font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-2">
+                    <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
                         <i class="fas fa-microchip text-accentBlue"></i>
                         <span class="lang-en">Engineering & Hardware Stack</span>
                         <span class="lang-de">Ingenieur- & Hardware-Stack</span>
                     </span>
                 </div>
                 <div class="flex flex-wrap gap-2 text-xs font-mono">
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300"><i class="fab fa-raspberry-pi text-red-400 mr-1.5"></i>Raspberry Pi</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300"><i class="fas fa-microchip text-teal-400 mr-1.5"></i>Arduino PWM</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300"><i class="fab fa-git-alt text-orange-400 mr-1.5"></i>Git</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300"><i class="fas fa-cloud text-accentBlue mr-1.5"></i>Vercel CI/CD</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300"><i class="fab fa-html5 text-orange-500 mr-1.5"></i>HTML5 / Tailwind</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-darkBg/80 border border-white/10 text-slate-200"><i class="fab fa-raspberry-pi text-red-400 mr-1.5"></i>Raspberry Pi</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-darkBg/80 border border-white/10 text-slate-200"><i class="fas fa-microchip text-teal-400 mr-1.5"></i>Arduino PWM</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-darkBg/80 border border-white/10 text-slate-200"><i class="fab fa-git-alt text-orange-400 mr-1.5"></i>Git</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-darkBg/80 border border-white/10 text-slate-200"><i class="fas fa-cloud text-accentBlue mr-1.5"></i>Vercel CI/CD</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-darkBg/80 border border-white/10 text-slate-200"><i class="fab fa-html5 text-orange-500 mr-1.5"></i>HTML5 / Tailwind</span>
                 </div>
             </div>
 
             <div class="grid gap-6 sm:grid-cols-2">
-                <!-- Robotic Arm -->
-                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentBlue/50 transition-all">
-                    <div class="space-y-3">
-                        <div class="flex items-center justify-between">
-                            <h2 class="font-semibold text-white text-base">
-                                <span class="lang-en">Robotic Arm Project</span>
-                                <span class="lang-de">Roboterarm-Projekt</span>
-                            </h2>
-                            <span class="text-xs font-mono text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded">
-                                <span class="lang-en">In Progress</span>
-                                <span class="lang-de">In Bearbeitung</span>
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-400 leading-relaxed">
-                            <span class="lang-en">Developing a multi-axis robotic arm utilizing a Raspberry Pi microcomputer and Arduino microcontrollers for precise motor control and sensor feedback.</span>
-                            <span class="lang-de">Entwicklung eines mehrachsigen Roboterarms mit Raspberry Pi und Arduino-Mikrocontrollern zur präzisen Motorsteuerung und Sensorrückmeldung.</span>
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-borderSubtle/60 flex items-center justify-between text-xs">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-raspberry-pi text-red-400 mr-1"></i>Raspberry Pi</span>
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-microchip text-accentBlue mr-1"></i>Arduino</span>
-                        </div>
-                        <a href="https://github.com/henri20HUB" target="_blank" class="text-accentBlue hover:text-blue-400 transition-colors inline-flex items-center gap-1 font-medium">
-                            GitHub <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Portfolio Infrastructure -->
-                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between space-y-4 hover:border-accentBlue/50 transition-all">
-                    <div class="space-y-3">
-                        <div class="flex items-center justify-between">
-                            <h2 class="font-semibold text-white text-base">
-                                <span class="lang-en">Portfolio Infrastructure</span>
-                                <span class="lang-de">Portfolio-Infrastruktur</span>
-                            </h2>
-                            <div class="w-8 h-8 rounded-lg bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue">
-                                <i class="fas fa-code-branch text-xs"></i>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-400 leading-relaxed">
-                            <span class="lang-en">Custom multi-page portfolio built with HTML and Tailwind CSS, integrated with Git version control and Vercel edge deployment.</span>
-                            <span class="lang-de">Mehrseitiges Portfolio entwickelt mit HTML und Tailwind CSS, angebunden an Git-Versionskontrolle und Vercel Deployment.</span>
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-borderSubtle/60 flex items-center justify-between text-xs">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fab fa-git-alt text-red-400 mr-1"></i>Git</span>
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300 text-xs font-mono"><i class="fas fa-cloud text-accentBlue mr-1"></i>Vercel</span>
-                        </div>
-                        <a href="https://github.com/henri20HUB" target="_blank" class="text-accentBlue hover:text-blue-400 transition-colors inline-flex items-center gap-1 font-medium">
-                            <span class="lang-en">Repository</span>
-                            <span class="lang-de">Repository</span>
-                            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- GitHub Infrastructures Overview -->
-            <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-4">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div class="space-y-1">
-                        <h3 class="font-semibold text-white text-base flex items-center gap-2">
-                            <i class="fab fa-github text-slate-200"></i> 
-                            <span class="lang-en">GitHub Web Infrastructures & Repositories</span>
-                            <span class="lang-de">GitHub Web-Infrastrukturen & Repositories</span>
-                        </h3>
-                        <p class="text-xs text-slate-400">
-                            <span class="lang-en">Overview of multiple static sites and web deployments built for different use cases.</span>
-                            <span class="lang-de">Übersicht mehrerer Web-Projekte und Deployments für verschiedene Verwendungszwecke.</span>
-                        </p>
-                    </div>
-                    <a href="https://github.com/henri20HUB?tab=repositories" target="_blank" class="px-4 py-2 rounded-xl bg-accentBlue/10 hover:bg-accentBlue/20 border border-accentBlue/30 text-accentBlue text-xs font-semibold tracking-wide transition-all inline-flex items-center gap-2">
-                        <span class="lang-en">View All Repositories</span>
-                        <span class="lang-de">Alle Repositories anzeigen</span>
-                        <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION 2: Courses & Certifications -->
-        <div class="space-y-6 pt-8 border-t border-borderSubtle">
-            <div class="space-y-2">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentPurple/10 border border-accentPurple/20 text-accentPurple text-xs font-mono">
-                    <i class="fas fa-laptop-code"></i> /courses-and-certifications
-                </div>
-                <h2 class="text-2xl font-bold tracking-tight text-white">
-                    <span class="lang-en">Courses & Certifications</span>
-                    <span class="lang-de">Kurse & Zertifikate</span>
-                </h2>
-            </div>
-
-            <!-- Academic CS & Space Systems Stack Box -->
-            <div class="p-4 rounded-xl bg-cardBg/60 border border-borderSubtle space-y-2">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-mono font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-2">
-                        <i class="fas fa-graduation-cap text-accentPurple"></i>
-                        <span class="lang-en">CS & Space Systems Concepts</span>
-                        <span class="lang-de">Informatik- & Raumfahrtsysteme-Konzepte</span>
-                    </span>
-                </div>
-                <div class="flex flex-wrap gap-2 text-xs font-mono">
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300"><i class="fas fa-code text-accentBlue mr-1.5"></i>C & Algorithms</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300"><i class="fab fa-python text-amber-400 mr-1.5"></i>Python</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300"><i class="fas fa-database text-teal-400 mr-1.5"></i>SQL & Data Structures</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300"><i class="fas fa-globe text-accentPurple mr-1.5"></i>Orbital Mechanics</span>
-                    <span class="px-2.5 py-1 rounded-md bg-darkBg border border-borderSubtle text-slate-300"><i class="fas fa-space-shuttle text-red-400 mr-1.5"></i>Spacecraft Subsystems</span>
-                </div>
-            </div>
-
-            <div class="grid gap-6 sm:grid-cols-2">
-                <!-- CS50x -->
-                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-3 flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <div class="flex items-center justify-between">
-                            <h3 class="font-semibold text-white text-base">Harvard CS50x</h3>
-                            <span class="text-xs font-mono text-slate-400">
-                                <span class="lang-en">Issued May 2026</span>
-                                <span class="lang-de">Ausgestellt Mai 2026</span>
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-400 leading-relaxed">
-                            <span class="lang-en">Introduction to Computer Science from Harvard University, covering algorithms, memory management, SQL, and programming fundamentals.</span>
-                            <span class="lang-de">Einführung in die Informatik der Harvard University mit Fokus auf Algorithmen, Speicherverwaltung, SQL und Programmiergrundlagen.</span>
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-borderSubtle/60 flex items-center justify-between text-xs text-slate-400">
-                        <span class="font-mono text-[11px] text-slate-500">ID: 433365b7-e595-4dfa-8bb4-b5b364f66201</span>
-                        <a href="assets/CS50x_Certificate.pdf" target="_blank" class="text-accentBlue hover:text-blue-400 transition-colors inline-flex items-center gap-1 font-medium">
-                            <span class="lang-en">Verify</span>
-                            <span class="lang-de">Verifizieren</span>
-                            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- EPFL Space Mission Design -->
-                <div class="p-6 rounded-2xl bg-cardBg border border-borderSubtle space-y-3 flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <div class="flex items-center justify-between">
-                            <h3 class="font-semibold text-white text-base">EPFL Space Mission Design</h3>
-                            <span class="text-xs font-mono text-slate-400">
-                                <span class="lang-en">Issued Oct. 2026</span>
-                                <span class="lang-de">Ausgestellt Okt. 2026</span>
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-400 leading-relaxed">
-                            <span class="lang-en">edX verified certificate covering orbital mechanics, spacecraft subsystems, propulsion, and mission planning frameworks.</span>
-                            <span class="lang-de">Zertifikat über Orbitalmechanik, Raumfahrzeug-Subsysteme, Antriebssysteme und Missionsplanung der EPFL.</span>
-                        </p>
-                    </div>
-                    <div class="pt-3 border-t border-borderSubtle/60 flex items-center justify-between text-xs text-slate-400">
-                        <span class="font-mono text-[11px] text-slate-500">ID: 69310ea121934419a1554bffe41eec6a</span>
-                        <a href="assets/EPFL_Space_Mission_Design_Certificate.pdf" target="_blank" class="text-accentBlue hover:text-blue-400 transition-colors inline-flex items-center gap-1 font-medium">
-                            <span class="lang-en">Verify</span>
-                            <span class="lang-de">Verifizieren</span>
-                            <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <div id="footer"></div>
-
-</body>
-</html>
+                <!-- Robotic Arm (Elevated Liquid Glass Card) -->
+                <div class="p-6 rounded-2xl bg-white/[0.025] backdrop-blur-xl border border-white/10 flex flex-col justify-between
