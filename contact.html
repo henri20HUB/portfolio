@@ -11,7 +11,6 @@
         html.lang-de-active .lang-en { display: none !important; }
     </style>
     <script src="components.js" defer></script>
-    <script defer src="/_vercel/insights/script.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -27,86 +26,79 @@
             }
         }
     </script>
-    <meta property="og:title" content="Contact — Henri Withöft" />
-    <meta property="og:description" content="Get in touch with Henri Withöft regarding academic research, engineering projects, or admissions." />
-    <meta property="og:type" content="website" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white min-h-screen flex flex-col justify-between">
 
     <div id="navbar"></div>
 
-    <main class="max-w-4xl mx-auto px-6 py-16 flex-grow space-y-12">
-
-        <!-- Header -->
-        <div class="space-y-3">
+    <main class="max-w-4xl mx-auto px-6 py-16 flex-grow space-y-8">
+        <div class="space-y-4 mb-8">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
-                <i class="fas fa-envelope"></i> /contact
+                <i class="fas fa-paper-plane"></i> /contact
             </div>
             <h1 class="text-3xl font-bold tracking-tight text-white">
-                <span class="lang-en">Get in Touch</span>
-                <span class="lang-de">Kontaktieren Sie Mich</span>
+                <span class="lang-en">Get in Touch & Credentials</span>
+                <span class="lang-de">Kontakt & Unterlagen</span>
             </h1>
-            <p class="text-sm text-slate-400 max-w-xl leading-relaxed">
-                <span class="lang-en">Feel free to reach out for academic inquiries, project collaborations, or official university records verification.</span>
-                <span class="lang-de">Treten Sie gerne für akademische Anfragen, Projektkooperationen oder die Überprüfung offizieller Unterlagen in Kontakt.</span>
+            <p class="text-slate-400 text-sm max-w-xl">
+                <span class="lang-en">Direct contacts and academic CV download for admissions or inquiries.</span>
+                <span class="lang-de">Direkte Kontaktdaten und akademischer Lebenslauf zum Download.</span>
             </p>
         </div>
 
-        <!-- Contact Links Grid -->
-        <div class="grid gap-4 sm:grid-cols-3">
-
-            <!-- 1. LinkedIn Link Card -->
-            <a href="https://www.linkedin.com/in/henri-with%C3%B6ft-70763440b/" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="p-5 rounded-2xl bg-cardBg border border-borderSubtle flex items-center justify-between hover:border-accentBlue/50 transition-all group">
-                <div class="flex items-center gap-3.5">
-                    <div class="w-10 h-10 rounded-xl bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue group-hover:scale-110 transition-transform">
-                        <i class="fab fa-linkedin-in text-base"></i>
-                    </div>
-                    <div>
-                        <span class="text-xs font-mono text-slate-500 uppercase tracking-wider block">LinkedIn</span>
-                        <span class="text-sm font-semibold text-white group-hover:text-accentBlue transition-colors">Henri Withöft</span>
-                    </div>
-                </div>
-                <i class="fas fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-accentBlue transition-colors"></i>
-            </a>
-
-            <!-- 2. Direct Email -->
-            <a href="mailto:Henri.withoeft@gmail.com" 
-               class="p-5 rounded-2xl bg-cardBg border border-borderSubtle flex items-center justify-between hover:border-accentBlue/50 transition-all group">
-                <div class="flex items-center gap-3.5">
-                    <div class="w-10 h-10 rounded-xl bg-accentPurple/10 border border-accentPurple/20 flex items-center justify-center text-accentPurple group-hover:scale-110 transition-transform">
-                        <i class="fas fa-at text-base"></i>
-                    </div>
-                    <div>
-                        <span class="text-xs font-mono text-slate-500 uppercase tracking-wider block">Email</span>
-                        <span class="text-sm font-semibold text-white group-hover:text-accentPurple transition-colors">Henri.withoeft@gmail.com</span>
+        <div class="grid gap-6 sm:grid-cols-2 max-w-2xl">
+            <!-- Email & Socials -->
+            <div class="p-8 rounded-2xl bg-cardBg border border-borderSubtle space-y-6 shadow-xl flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 text-slate-300">
+                        <div class="w-12 h-12 rounded-xl bg-darkBg border border-borderSubtle flex items-center justify-center text-accentBlue text-lg">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium tracking-wider uppercase">
+                                <span class="lang-en">Direct Email</span>
+                                <span class="lang-de">E-Mail Adresse</span>
+                            </p>
+                            <a href="mailto:Henri.withoeft@gmail.com" class="text-sm font-semibold text-white hover:text-accentBlue transition-colors break-all">
+                                Henri.withoeft@gmail.com
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <i class="fas fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-accentPurple transition-colors"></i>
-            </a>
 
-            <!-- 3. GitHub Profile -->
-            <a href="https://github.com/henri20HUB" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="p-5 rounded-2xl bg-cardBg border border-borderSubtle flex items-center justify-between hover:border-accentBlue/50 transition-all group">
-                <div class="flex items-center gap-3.5">
-                    <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-200 group-hover:scale-110 transition-transform">
-                        <i class="fab fa-github text-base"></i>
-                    </div>
-                    <div>
-                        <span class="text-xs font-mono text-slate-500 uppercase tracking-wider block">GitHub</span>
-                        <span class="text-sm font-semibold text-white group-hover:text-slate-200 transition-colors">henri20HUB</span>
-                    </div>
+                <div class="pt-6 border-t border-borderSubtle flex items-center justify-between text-sm text-slate-400">
+                    <a href="https://www.linkedin.com/in/henri-with%C3%B6ft-70763440b/" target="_blank" class="hover:text-accentBlue transition-colors flex items-center gap-2">
+                        <i class="fab fa-linkedin text-base text-accentBlue"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/henri20HUB" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
+                        <i class="fab fa-github text-base"></i> GitHub
+                    </a>
                 </div>
-                <i class="fas fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-slate-200 transition-colors"></i>
-            </a>
+            </div>
 
+            <!-- Download CV Card -->
+            <div class="p-8 rounded-2xl bg-cardBg border border-borderSubtle space-y-6 shadow-xl flex flex-col justify-between">
+                <div class="space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-accentBlue/10 border border-accentBlue/20 flex items-center justify-center text-accentBlue text-lg">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h2 class="text-lg font-semibold text-white">
+                        <span class="lang-en">Academic CV</span>
+                        <span class="lang-de">Akademischer Lebenslauf</span>
+                    </h2>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        <span class="lang-en">Formal 1-page overview of educational history, certifications, published research, and technical background.</span>
+                        <span class="lang-de">1-seitige Übersicht zu Bildungsweg, Zertifikaten, Publikationen und technischem Hintergrund.</span>
+                    </p>
+                </div>
+
+                <a href="assets/Henri_Withoft_CV.pdf" download target="_blank" class="w-full py-3 px-4 rounded-xl bg-accentBlue hover:bg-blue-600 text-white text-xs font-semibold tracking-wide flex items-center justify-center gap-2 transition-all shadow-lg shadow-accentBlue/20">
+                    <i class="fas fa-download"></i> 
+                    <span class="lang-en">Download PDF CV</span>
+                    <span class="lang-de">Lebenslauf als PDF herunterladen</span>
+                </a>
+            </div>
         </div>
-
     </main>
 
     <div id="footer"></div>
